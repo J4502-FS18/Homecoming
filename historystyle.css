@@ -1,0 +1,30 @@
+
+
+.order {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.order .line {
+    display: inline-block;
+    width: 20%;
+    border-top: 3px solid black;
+    position:relative;
+    
+}
+
+
+.order .txt {
+    color:#F1B254;
+    vertical-align: middle;
+    text-align: center;
+    font-size: auto;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        padding: 4rem;
+    }
