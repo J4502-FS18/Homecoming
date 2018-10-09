@@ -93,7 +93,7 @@ nav a:hover{
 
 nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 nav li{
