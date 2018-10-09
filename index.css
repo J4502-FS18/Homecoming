@@ -7,8 +7,7 @@ p
 p
 {font-family: }
 
-div {
-  background-color: white;
+div {background-color: white;
   width:300px;
   border: none;
   padding: 25px;
@@ -71,7 +70,7 @@ nav a:hover{
 
 /* flex styles */
 
-@media screen and (min-width: 768px){
+@media screen (min-width: 768px){
 
 nav ul{
   display: flex;
