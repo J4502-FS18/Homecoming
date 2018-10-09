@@ -26,10 +26,18 @@ p
   margin: 0 auto;
 }
 
-/*image size*/
-.logo {
-  width: 150px;
+/*image logo*/
+.header img {
   float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
 }
 
 /* menu base styles */
