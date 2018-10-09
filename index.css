@@ -13,28 +13,25 @@ div {background-color: white;
   padding: 25px;
   margin:25px;
 }
-/* header style */
+/*header style*/
+header {
+  background-color: white;
+  height: 150px;
+  padding: 4px;
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+}
+header h1{
+text-align: center;
+color: black;
+line-height: 50px;
+
 }
 
-.header {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
 
-.header-right {
-  float: right;
-}
+
+
+
+
 /*lauren trying the nav bar again*/
 *{
   font-family: verdana;
