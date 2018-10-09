@@ -7,7 +7,7 @@ p
 p
 {font-family: }
 
-div {background-color: white;
+.container {background-color: white;
   width:300px;
   border: none;
   padding: 25px;
@@ -77,4 +77,6 @@ nav li{
   flex: 1 1 0;
 }
 
-.photos {}
+.photos {
+  padding: 4px
+}
