@@ -82,11 +82,14 @@ ul.main_menu li a.active {
 
   background-color: #4CAF50;}
 
-  @media only screen and (max-width:620px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width:100%;
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
     }
+}
 
 .photos {}
 
