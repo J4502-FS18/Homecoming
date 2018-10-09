@@ -13,8 +13,6 @@ p
 div.container {
   display: flex
   padding:20px;
-   border-color: : black;
-   border-width: 6px;
    background-color: white;
    vertical-align:left;
    margin-left:auto;
