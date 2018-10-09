@@ -42,7 +42,21 @@ nav ul{
   padding: 0;
 }
 
+<<<<<<< HEAD
+
+
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black ;
+  justify-content: center;
+=======
 nav a{
+>>>>>>> da062ca1f226f2e9120243e58a9935838200c743
   text-decoration: none;
   text-align: center;
   color: #fff;
