@@ -61,6 +61,7 @@ ul.main_menu {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width:20%;
 }
 
 ul.main_menu li {float: left;}
