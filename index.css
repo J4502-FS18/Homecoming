@@ -19,15 +19,12 @@ p
 
 
 
-
 /* Style the top navigation bar */
 .navbar {
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: black ;
-  justify-content: center;
-  text-decoration: none;
+    display: flex;
+    background-color: #000000;
 }
+
 /* Style the navigation bar links */
 .navbar a {
     color: white;
@@ -38,10 +35,9 @@ p
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: black;
-    color: #E8B800;
+    background-color: #C2A73D;
+    color: black;
 }
-
 
 
 
