@@ -44,7 +44,8 @@ nav ul{
   background-color: black ;
   justify-content: center;
 
-nav {
+
+nav a{
   text-decoration: none;
   text-align: center;
   color: #fff;
