@@ -11,8 +11,11 @@ p
 {font-family: }
 
 div.container {
-  display: flex
-  padding:30px;
+  display: flex;
+  padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
    background-color: white;
    vertical-align:left;
    margin-left:auto;
