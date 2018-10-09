@@ -80,10 +80,10 @@ ul.main_menu li a.active {
   background-color: #4CAF50;}
 
 
-  @media screen and (max-width:800px) {
-    ul.main_menu, .container, .header{
-      width:100%;
-    }
+@media screen and (max-width: 600px){
+    ul.main_menu div.container,
+    ul.main_menu li {float: none;}
+}
 .photos {}
 
 
