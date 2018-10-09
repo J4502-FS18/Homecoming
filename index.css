@@ -61,7 +61,7 @@ nav a:hover{
 
 nav ul{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 nav li{
