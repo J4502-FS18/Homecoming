@@ -7,7 +7,7 @@ p
 p
 {font-family: }
 
-div {background-color: white;
+div.container {background-color: white;
   width:300px;
   border: none;
   padding: 25px;
@@ -83,13 +83,7 @@ ul.topnav li a.active {
 }
 .photos {}
 
-  div {
-    background-color: white;
-    width:300px;
-    border: none;
-    padding: 25px;
-    margin:25px;
-  }
+
 
   div.gallery {
     border: 4px
