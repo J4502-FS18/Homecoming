@@ -75,15 +75,15 @@ ul.main_menu li a:hover:not(.active) {
 
   background-color: #111;}
 
-ul.topnav li a.active {
+ul.main_menu li a.active {
 
   background-color: #4CAF50;}
 
 
-@media screen and (max-width: 600px){
-    ul.main_menu li.right,
-    ul.main_menu li {float: none;}
-}
+  @media screen and (max-width:800px) {
+    ul.main_menu, .container, .header{
+      width:100%;
+    }
 .photos {}
 
 
