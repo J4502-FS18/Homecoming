@@ -23,6 +23,8 @@ p
 .navbar {
     display: flex;
     background-color: #000000;
+    text-align: center;
+    float: center
 }
 
 /* Style the navigation bar links */
