@@ -54,17 +54,13 @@ line-height: 50px;
   float: left;
 }
 /*header and nav bar*/
-header{
-  background-color: white;
-  height: 150 px;
-  padding: 4px;
-
+.header {
+    padding: 60px;
+    text-align: center;
+    background: white;
+    color: black;
 }
 
-header h1{
-  text-align: center;
-  color: black;
-  line-height: 50px;
 
 
 }
