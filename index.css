@@ -19,7 +19,11 @@ p
   font-size: 16px;
 
 }
+wrapper.container{
+{ float: none; width: 200px;
+  background: skyblue; margin: 0 auto; padding: 10px; }
 
+}
 
 /*lauren trying the nav bar again*/
 *{
