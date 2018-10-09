@@ -21,6 +21,7 @@ div.container {
    margin-right:auto;
    text-align:left;
    width: 550px;
+   width:60%;
 
 }
 
@@ -80,11 +81,12 @@ ul.main_menu li a.active {
 
   background-color: #4CAF50;}
 
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width:100%;
+    }
 
-@media screen and (max-width: 600px){
-    ul.main_menu div.container,
-    ul.main_menu li {float: none;}
-}
 .photos {}
 
 
