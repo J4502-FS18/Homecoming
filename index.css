@@ -8,13 +8,11 @@ p
 {font-family: }
 
 div.container {
-  display: grid;
-  grid-gap: 10px;
+  width: 50%;
   border: none;
   padding: 25px;
   flex: 70%;
   background-color: white;
-  margin: 20px;
 
 }
 
