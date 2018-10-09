@@ -54,15 +54,18 @@ line-height: 50px;
   float: left;
 }
 /*header and nav bar*/
-/* menu base styles */
-
-nav{
-  background: #333;
+header{
+  background-color: white;
+  height: 150 px;
+  padding: 4px;
 }
 
-nav ul{
-  list-style-type: none;
-  padding: 0;
+header h1{
+  text-align: center;
+  color: black;
+  line-height: 50px;
+
+
 }
 
 /* Style the top navigation bar */
