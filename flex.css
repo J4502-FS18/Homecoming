@@ -4,7 +4,7 @@
 
 .headline{
     display:flex;
-    flex-wrap:nowrap;
+    
 }
 @media (min-width: 1200px) {
     .headline {
@@ -27,7 +27,7 @@
         text-align: center;
     }
     p{
-        padding: 0rem;
+        padding: 0.5rem;
     }
     .headline.line{
         width: 15%;
