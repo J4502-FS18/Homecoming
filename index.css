@@ -7,7 +7,7 @@ p
 p
 {font-family: }
 
-.container {background-color: white;
+div {background-color: white;
   width:300px;
   border: none;
   padding: 25px;
@@ -26,18 +26,10 @@ p
   margin: 0 auto;
 }
 
-/*image logo*/
-.header img {
+/*image size*/
+.logo {
+  width: 150px;
   float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
-}
-
-.header h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
 }
 
 /* menu base styles */
@@ -85,6 +77,16 @@ nav li{
   flex: 1 1 0;
 }
 
-.photos {
-  padding: 4px
-}
+.photos {}
+
+  div {
+    background-color: white;
+    width:300px;
+    border: none;
+    padding: 25px;
+    margin:25px;
+  }
+
+  div.gallery {
+    border: 4px
+  }
