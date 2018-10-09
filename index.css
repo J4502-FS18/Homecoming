@@ -68,43 +68,36 @@ header h1{
 
 
 }
+/*nav bar style*/
+body {margin: 0;}
 
-/* Style the top navigation bar */
-.navbar {
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: black ;
-  justify-content: center;
+ul.main_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav a{
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  display: block;
-  padding: 5px 0 5px 0;
-  line-height: 32px;
+ul.main_menu li {float: left;}
+
+ul.main_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav a:hover{
-  background-color: #555;
+ul.main_menu li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+
+@media screen and (max-width: 600px){
+    ul.main_menu li.right,
+    ul.main_menu li {float: none;}
 }
-
-
-/* flex styles */
-
-@media screen (min-width: 768px){
-
-nav ul{
-  display: flex;
-  justify-content: center;
-}
-
-nav li{
-  flex: 1 1 0;
-  display: block;
-}
-
 .photos {}
 
   div {
