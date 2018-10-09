@@ -103,10 +103,6 @@ nav ul{
 nav li{
   flex: 1 1 0;
 }
-nav{
-  display: flex;
-
-}
 
 ul.social{
   margin: 0;
