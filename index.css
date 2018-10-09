@@ -41,12 +41,6 @@ nav ul{
   padding: 0;
 }
 
-<<<<<<< HEAD
-
-
-
-
-
 /* Style the top navigation bar */
 .navbar {
   flex-direction: row;
@@ -55,7 +49,6 @@ nav ul{
   justify-content: center;
 =======
 nav a{
->>>>>>> da062ca1f226f2e9120243e58a9935838200c743
   text-decoration: none;
   text-align: center;
   color: #fff;
@@ -79,6 +72,4 @@ nav ul{
 
 nav li{
   flex: 1 1 0;
-}
-
 }
