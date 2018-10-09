@@ -7,13 +7,42 @@ p
 p
 {font-family: }
 
+div {
+  background-color: white;
+  width:300px;
+  border: none;
+  padding: 25px;
+  margin:25px;
+}
 
+/*lauren trying the nav bar again*/
+*{
+  font-family: verdana;
+  margin: 0;
+}
 
+body{
+  background: #eee;
+}
 
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
+/* menu base styles */
 
+nav{
+  background: #333;
+}
 
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
 
+<<<<<<< HEAD
 
 
 
@@ -25,33 +54,32 @@ p
   flex-wrap: wrap;
   background-color: black ;
   justify-content: center;
+=======
+nav a{
+>>>>>>> da062ca1f226f2e9120243e58a9935838200c743
   text-decoration: none;
-}
-/* Style the navigation bar links */
-.navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
 }
 
-/* Change color on hover */
-.navbar a:hover {
-    background-color: black;
-    color: #E8B800;
+nav a:hover{
+  background-color: #555;
 }
 
 
+/* flex styles */
 
+@media screen and (min-width: 768px){
 
-.header {
-    padding: 60px;
-    text-align: center;
-    background: white;
-    color: black;
+nav ul{
+  display: flex;
+  justify-content: space-around;
 }
 
+nav li{
+  flex: 1 1 0;
+}
 
-img {
-    float: left;
 }

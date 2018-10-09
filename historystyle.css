@@ -1,21 +1,21 @@
 
 
-.order {
+.headline {
     height: 40px;
     line-height: 40px;
     text-align: center;
 }
 
-.order .line {
+.headline .line {
     display: inline-block;
-    width: 20%;
+    width: 80%;
     border-top: 3px solid black;
-    position:relative;
+    position:absolute;
+    top:4%;
     
 }
 
-
-.order .txt {
+.headline .txt {
     color:#F1B254;
     vertical-align: middle;
     text-align: center;
@@ -23,8 +23,33 @@
     font-family: 'Raleway', sans-serif;
     font-style: bold;
     }
+
     p {
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
-        padding: 4rem;
+        padding: 1rem;
     }
+
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+
+    .time{
+        font-style: italic;
+    }
+    .img{
+            clear: both;
+            display: block;
+            margin:auto;
+           }
+
+.map{
+    clear: both;
+    display: block;
+    margin:auto;
+    width: 80%;
+    height: auto;
+  
+}
+    
