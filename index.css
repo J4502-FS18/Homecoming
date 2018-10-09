@@ -13,23 +13,6 @@ div {background-color: white;
   padding: 25px;
   margin:25px;
 }
-/*header style*/
-header {
-  background-color: white;
-  height: 50px;
-  padding: 4px;
-
-}
-header h1{
-text-align: center;
-color: black;
-line-height: 50px;
-
-}
-
-
-
-
 
 
 /*lauren trying the nav bar again*/
@@ -54,7 +37,7 @@ line-height: 50px;
   float: left;
 }
 /*header and nav bar*/
-header {
+div.header {
     padding: 60px;
     text-align: center;
     background: white;
