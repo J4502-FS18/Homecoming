@@ -20,7 +20,7 @@
 @media (max-width: 600px) {
     
     .order {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         height: 0.5rem;
         line-height: 0.5rem;
         text-align: center;
@@ -32,8 +32,8 @@
         width: 15%;
         border-top: 1px solid black;
     }
-    .gallery{
-        width: 20%;
+    .aligncenter{
+        width: 90%;
         height:auto;
     }
    
