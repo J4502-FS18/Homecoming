@@ -7,168 +7,194 @@ p
 p
 {font-family: }
 
+div {
+  background-color: white;
+  width:300px;
+  border: none;
+  padding: 25px;
+  margin:25px;
+}
 
+/*lauren trying the nav bar again*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
-/*lauren trying shit */
-*{
-	margin: 0px;
-	padding: 0px;
+:root {
+  --background: rgba(0, 214, 170, .85);
 }
-body{
-	background: skyblue;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-#header{
-	width: 100%;
-	height: 80px;
-	background: #333;
-	box-shadow: 0px 2px 4px gray;
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
-#logo{
-	width:200px;
-	height: 80px;
-	float: left;
-	padding-left:40px;
+
+.content {
+  height: 200vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
 }
-#navbar{
-	width:1000px;
-	height: 80px;
-	margin: 0px auto;
-	float: right;
+
+/* navigation styles start here */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
-#navbar>li{
-	float: left;
-	list-style: none;
-	width: 190px;height: 80px;
-	border-right:1px solid #534444;
-	border-left: 1px solid #534444;
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
-li>a{
-	text-decoration: none;
-	color: white;
-	font-family: cursive;
-	font-size: 20px;
-	line-height: 80px;
-	display: block;
-	text-align: center;
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
 }
-li>a:hover,
-li>a:focus{
-	background: skyblue;
-	color: #333;
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-#res_btn{
-	width: 50px;
-	height: 50px;
-	float: right;
-	display: none;
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
 }
-@media screen and (max-width:1260px){
-	#logo>img{
-		width:150px;
-		height: 60px;
-		float: left;
-		padding-left:20px;
-		padding-top: 10px;
-	}
-	#navbar{
-		width:800px;
-		height: 80px;
-		margin: 0px auto;
-		float: right;
-	}
-	#navbar>li{
-		float: left;
-		list-style: none;
-		width: 150px;
-		height: 80px;
-		border-right:1px solid #534444;
-		border-left: 1px solid #534444;
-	}
-	li>a{
-		text-decoration: none;
-		color: white;
-		font-family: cursive;
-		font-size: 20px;
-		line-height: 80px;
-		display: block;
-		text-align: center;
-	}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
 }
-@media screen and (max-width:1060px){
-	#header{
-		width: 100%;
-		height: 80px;
-		background: #333;
-		box-shadow: 0px 2px 4px gray;
-		position:relative;top:80px;
-	}
-	#logo{
-		width:100%;
-		height: 90px;
-		float: left;
-		padding-left:20px;
-		padding-top: 10px;
-		position: absolute;
-		top:-90px;
-		background: white;
-	}
-	#navbar{
-		width:100%;
-		height: 60px;
-		margin: 0px auto;
-	}
-	#navbar>li{
-		width: 18%;
-	}
-	li>a{
-		font-size: 16px;
-	}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
 }
-@media screen and (max-width:768px){
-	#header{
-		height: 50px;
-	}
-	#navbar{
-		width:100%;
-		height: 50px;
-		margin: 0px auto;
-		}
-	#navbar>li{
-		width: 19%;
-		height: 50px;
-		}
-	li>a{
-		font-size: 16px;
-		line-height: 50px;
-	}
+
+.nav-toggle-label span::after {
+  top: 7px;
 }
-@media screen and (max-width: 480px){
-	#header{
-		height: 0px;
-	}
-	#navbar{
-		width:100%;
-		height: 50px;
-		margin: 0px auto;
-		margin-top:-40px;
-		display: none;
-	}
-	#navbar>li{
-		float: none;
-		list-style: none;
-		width: 100%;
-		height: 50px;
-		background: #333;
-		border-bottom: 1px solid skyblue;
-	}
-	li>a{
-		font-size: 16px;
-		line-height: 50px;
-	}
-	#res_btn{
-		display: block;
-		position: relative;
-		top:-80px;
-		cursor: pointer;
-	}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
 }
