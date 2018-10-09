@@ -26,6 +26,12 @@ div {background-color: white;
   margin: 0 auto;
 }
 
+/*image size*/
+img {
+  width: 150px;
+  float: left;
+}
+
 /* menu base styles */
 
 nav{
