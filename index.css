@@ -22,8 +22,7 @@ div {
 }
 
 body{
-  background: black;
-  color: #333;
+  background: #eee;
 }
 
 .wrapper{
@@ -55,43 +54,8 @@ nav a:hover{
   background-color: #555;
 }
 
-/* social menu base styles */
-
-a.tw{
-  background: url(img/tw.png) no-repeat center;
-  background-size: 80%;
-
-}
-
-a.fb{
-  background: url(img/fb.png) no-repeat center;
-  background-size: 80%;
-}
-
-.social a{
-  text-indent: -10000px;
-  margin: 0 auto;
-}
-
-.social{
-  max-width: 80px;
-  margin: 0 auto; /* do at end */
-}
-
-/* grid vs flex base styles */
-
-
 
 /* flex styles */
-
-nav ul.social li{
-  flex: 1 1 0;
-}
-
-nav ul.social{
-  flex: 1 1 0;
-  display: flex;
-}
 
 @media screen and (min-width: 768px){
 
@@ -102,10 +66,6 @@ nav ul{
 
 nav li{
   flex: 1 1 0;
-}
-
-ul.social{
-  margin: 0;
 }
 
 }
