@@ -58,16 +58,14 @@ header{
   background-color: white;
   height: 150 px;
   padding: 4px;
-  display: flex;
-  flex-flow: row wrap;
+
 }
 
 header h1{
   text-align: center;
   color: black;
   line-height: 50px;
-  display: flex;
-  flex-flow: row wrap;
+
 
 }
 
