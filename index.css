@@ -11,6 +11,7 @@ p
 {font-family: }
 
 div.container {
+  display: flex
   padding:20px;
    border-color: : black;
    border-width: 6px;
