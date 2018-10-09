@@ -54,7 +54,7 @@ line-height: 50px;
   float: left;
 }
 /*header and nav bar*/
-.header {
+header {
     padding: 60px;
     text-align: center;
     background: white;
@@ -85,9 +85,13 @@ ul.main_menu li a {
     text-decoration: none;
 }
 
-ul.main_menu li a:hover:not(.active) {background-color: #111;}
+ul.main_menu li a:hover:not(.active) {
 
-ul.topnav li a.active {background-color: #4CAF50;}
+  background-color: #111;}
+
+ul.topnav li a.active {
+
+  background-color: #4CAF50;}
 
 
 @media screen and (max-width: 600px){
