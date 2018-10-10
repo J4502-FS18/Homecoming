@@ -82,35 +82,13 @@ ul.main_menu li a.active {
 
   background-color: #4CAF50;}
 
-  /* this is the styling for the humans page */
-  /* .humans_images {
-  position: relative;
-  width: 50%;
-} */
+  
 
 .humans_images img {
   width: 100%;
   height: 100%;
 }
 
-/* .humans_images .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.humans_images .btn:hover {
-  background-color: black;
-} */
 
 
 .photos {}
