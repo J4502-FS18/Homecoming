@@ -54,34 +54,7 @@ div.header {
 
 }
 /*nav bar style*/
-body {margin: 0;}
 
-ul.main_menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    width:100%;
-}
-
-ul.main_menu li {float: left;}
-
-ul.main_menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.main_menu li a:hover:not(.active) {
-
-  background-color: #111;}
-
-ul.main_menu li a.active {
-
-  background-color: #4CAF50;}
 
 
 
@@ -92,8 +65,8 @@ ul.main_menu li a.active {
 
 
 
-@media (max-width: 600px) {
-    .row {
+@media (min-width: 600px) {
+    .container {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
