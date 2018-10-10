@@ -10,6 +10,7 @@ p
 p
 {font-family: }
 
+
 div.container {
   display: flex;
   padding-left: 30px;
@@ -38,7 +39,7 @@ div.container {
 
 /*image size*/
 .logo {
-  width: 150px;
+  width: 10px;
   float: left;
 }
 /*header and nav bar*/
@@ -93,29 +94,8 @@ ul.main_menu li a.active {
   height: 100%;
 }
 
-/* .humans_images .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.humans_images .btn:hover {
-  background-color: black;
-} */
 
 
-
-
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .row {
       -webkit-flex-direction: column;
