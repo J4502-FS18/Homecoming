@@ -38,10 +38,10 @@ div.container {
 
 
 /*image size*/
-.logo {
-  width: 10px;
-  float: left;
-}
+
+
+
+
 /*header and nav bar*/
 div.header {
     padding: 60px;
@@ -83,18 +83,13 @@ ul.main_menu li a.active {
 
   background-color: #4CAF50;}
 
-  
+
 
 .humans_images img {
   width: 100%;
   height: 100%;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 80c1f0a81659b2f8db6b2200f5cdde01b3ebb07b
 
 
 @media (max-width: 600px) {
