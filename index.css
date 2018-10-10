@@ -54,36 +54,26 @@ div.header {
 
 }
 /*nav bar style*/
-body {margin: 0;}
-
-ul.main_menu {
-    list-style-type: none;
+#nav li {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    width:100%;
+	  border-bottom: 1px solid #ccc;
 }
 
-ul.main_menu li {float: left;}
-
-ul.main_menu li a {
-    display: block;
+#nav a:link, #nav a:visited {
+	  display:block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    background-color: black;
+    font-weight: bold;
+    text-align:center;
     text-decoration: none;
+    padding: 4px;
+    font-family: 'Encode Sans Condensed', sans-serif, 'Times New Roman';
 }
 
-ul.main_menu li a:hover:not(.active) {
-
-  background-color: #111;}
-
-ul.main_menu li a.active {
-
-  background-color: #4CAF50;}
-
-
+#nav a:hover, #nav a:active {
+    background-color: #9b9b9b;
+}
 
 .humans_images img {
   width: 100%;
