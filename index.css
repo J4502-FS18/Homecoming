@@ -97,3 +97,37 @@ div.header {
     justify-content: space-around;
   }
 }
+#navtips a:link, #navtips a:visited {
+	  display:block;
+    color: white;
+    background-color: black;
+    font-weight:normal;
+    text-align:center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif, 'Times New Roman';
+}
+
+#navtips a:hover, #navtips a:active {
+    background-color: #FFC621;
+}
+
+#navtips {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+#bodytips {
+  font-family: 'Raleway', sans-serif, 'Times New Roman';
+  background-color: white;
+}
+
+#headtt {
+  text-align: center;
+  background: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: auto;
+}
