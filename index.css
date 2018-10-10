@@ -38,10 +38,10 @@ div.container {
 
 
 /*image size*/
-
-
-
-
+.logo {
+  width: 10px;
+  float: left;
+}
 /*header and nav bar*/
 div.header {
     padding: 60px;
@@ -54,15 +54,36 @@ div.header {
 
 }
 /*nav bar style*/
+body {margin: 0;}
 
+ul.main_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+}
 
+ul.main_menu li {float: left;}
 
-<<<<<<< HEAD
+ul.main_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.main_menu li a:hover:not(.active) {
+
+  background-color: #111;}
+
+ul.main_menu li a.active {
+
   background-color: #4CAF50;}
 
 
-=======
->>>>>>> f7714065cc8c2ba3ee7c3cf62b6221ec56377cea
 
 .humans_images img {
   width: 100%;
@@ -75,18 +96,10 @@ div.header {
   flex-direction: row;
 }
 
-<<<<<<< HEAD
 @media (min-width: 600px){
-  .container,.main_menu {
+  .container {
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
   }
-=======
-@media (min-width: 600px) {
-    .container {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
->>>>>>> f7714065cc8c2ba3ee7c3cf62b6221ec56377cea
 }
