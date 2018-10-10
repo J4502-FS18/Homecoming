@@ -1,17 +1,30 @@
 p
 {color: black}
 body
-{background-color: black}
+{
+  background-color: black;
+  height: 100%;
+}
 p
 {text-align: left;}
 p
 {font-family: }
 
-.container {background-color: white;
-  width:300px;
-  border: none;
-  padding: 25px;
-  margin:25px;
+div.container {
+  display: flex;
+  padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   background-color: white;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:left;
+   width: 550px;
+   width:60%;
+
+}
+
 }
 
 /*lauren trying the nav bar again*/
@@ -20,63 +33,100 @@ p
   margin: 0;
 }
 
-.wrapper{
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
+
+
 
 /*image size*/
 .logo {
   width: 150px;
   float: left;
 }
-
-/* menu base styles */
-
-nav{
-  background: #333;
+/*header and nav bar*/
+div.header {
+    padding: 60px;
+    text-align: center;
+    background: white;
+    color: black;
 }
 
-nav ul{
-  list-style-type: none;
-  padding: 0;
+
+
+}
+/*nav bar style*/
+body {margin: 0;}
+
+ul.main_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
 }
 
-/* Style the top navigation bar */
-.navbar {
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: black ;
-  justify-content: center;
+ul.main_menu li {float: left;}
+
+ul.main_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav a{
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  display: block;
-  padding: 10px;
+ul.main_menu li a:hover:not(.active) {
+
+  background-color: #111;}
+
+ul.main_menu li a.active {
+
+  background-color: #4CAF50;}
+
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
 }
 
-nav a:hover{
+.photos {}
+
+
+
+  div.gallery {
+    border: 4px
+  }
+
+  /* this is the styling for the humans page */
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-
-/* flex styles */
-
-@media screen (min-width: 768px){
-
-nav ul{
-  display: flex;
-  justify-content: space-around;
-}
-
-nav li{
-  flex: 1 1 0;
-}
-
-.photos {
-  padding: 4px
+.container .btn:hover {
+  background-color: black;
 }

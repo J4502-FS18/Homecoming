@@ -1,36 +1,27 @@
 :root{
-    font-size:40px;
+    font-size:16px;
 }
 
-.headline{
-    display:flex;
-    
-}
-@media (min-width: 1200px) {
-    .headline {
-        font-size: 1.8rem;
-    }
-    p{
-        font-size: 0.7rem; 
-    }
-    
-    
-}
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     
     .headline {
         padding: 0.7rem;
-        font-size: 0.6rem;
-        height: 0.5rem;
+        font-size: 2rem;
+        height: 2rem;
         line-height: 0.5rem;
         text-align: center;
     }
     p{
         padding: 0.5rem;
     }
-    .headline.line{
-        width: 15%;
+    .line1{
+        width: 25%;
+        border-top: 1px solid black;
+        align-items: center;
+    }
+    .line2{
+        width: 25%;
         border-top: 1px solid black;
         align-items: center;
     }
