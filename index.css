@@ -105,12 +105,10 @@ ul.main_menu li a.active {
   width: 50%;
 }
 
-
 .container img {
   width: 100%;
   height: 100%;
 }
-
 
 .container .btn {
   position: absolute;
@@ -129,4 +127,62 @@ ul.main_menu li a.active {
 
 .container .btn:hover {
   background-color: black;
+}
+
+.container1 {
+position: relative;
+width: 50%;
+}
+
+.container1 img {
+width: 100%;
+height: 100%;
+}
+
+.container1 .btn1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: #555;
+color: white;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.container1 .btn1:hover {
+background-color: black;
+}
+
+.container2 {
+position: relative;
+width: 50%;
+}
+
+.container2 img {
+width: 100%;
+height: 100%;
+}
+
+.container2 .btn2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: #555;
+color: white;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.container2 .btn2:hover {
+background-color: black;
 }
