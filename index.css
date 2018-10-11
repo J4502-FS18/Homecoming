@@ -64,7 +64,7 @@ div.container {
   position: center;
   top: 20px;
   left: 0px;
-  font-size: 60px;
+  font-size: 40px;
 
 }
 
@@ -144,4 +144,8 @@ div.container {
   color: black;
   font-family: 'Raleway', sans-serif, 'Times New Roman';
   font-size: auto;
+}
+
+.photos {
+  float=
 }
