@@ -4,7 +4,7 @@
 
 
 @media (min-width: 600px) {
-    
+
     .headline {
         padding: 0.7rem;
         font-size: 2rem;
@@ -29,10 +29,15 @@
         width: 90%;
         height:auto;
     }
-   
+
     .map{
         width: 90%;
         height:auto;
     }
 }
 
+#navtips {
+  flex-direction: row;
+  flex-flow: wrap;
+  flex: initial;
+}
