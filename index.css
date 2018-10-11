@@ -146,6 +146,11 @@ div.container {
   font-size: auto;
 }
 
-.photos {
-  float=
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
