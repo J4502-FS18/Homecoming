@@ -154,6 +154,11 @@ div.container {
   padding-top: 8px;
 }
 
+.sociallogos {
+  width: 20%;
+  height: 20%;
+  float: center;
+}
 /*Chengzi-history and events css*/
 .headline {
   width: 100%;
