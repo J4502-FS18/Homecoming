@@ -153,3 +153,88 @@ div.container {
   padding-bottom: 8px;
   padding-top: 8px;
 }
+
+/*Chengzi-history and events css*/
+.headline {
+  width: 100%;
+
+  font-size: 24px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.txt {
+  color: #F1B254;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  padding: 0.5rem;
+
+}
+
+.line1 {
+  position: absolute;
+  width: 10%;
+  height: 0px;
+  display: block;
+  border: 1px solid white;
+  top: 17px;
+  left:0;
+}
+
+.line2 {
+  position: absolute;
+  width: 10%;
+  height: 0px;
+  display: block;
+  border: 1px solid white;
+  top: 17px;
+  right:0;
+}
+
+p {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#activity{
+  background-color: white;
+}
+h3 {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.time {
+  font-style: italic;
+}
+
+.img {
+  clear: both;
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+.map {
+  clear: both;
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+.h2{
+  background-color: white;
+  text-align: center;
+  font-family: 'raleway';
+}
+/*Chengzi end*/
