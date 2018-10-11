@@ -1,28 +1,27 @@
-p
-{color: black}
-body
-{
+p {
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif, 'Times New Roman'
+}
+body {
   background-color: black;
   height: 100%;
 }
-p
-{text-align: left;}
-p
-{font-family: 'Raleway', sans-serif, 'Times New Roman'}
 
 
 div.container {
   display: flex;
   padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-   background-color: white;
-   margin-left:auto;
-   margin-right:auto;
-   text-align:left;
-   width: 550px;
-   width:60%;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  width: 550px;
+  width:60%;
+  font: black;
 
 }
 
