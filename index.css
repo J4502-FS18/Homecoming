@@ -153,3 +153,9 @@ div.container {
   padding-bottom: 8px;
   padding-top: 8px;
 }
+
+.sociallogos {
+  width: 20%;
+  height: 20%;
+  float: center;
+}
