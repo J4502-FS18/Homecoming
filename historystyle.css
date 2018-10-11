@@ -22,7 +22,7 @@
     width: 10%;
     height: 0px;
     display: block;
-    border: 1px solid black;
+    border: 1px solid white;
     top: 17px;
     left:0;
 }
@@ -32,7 +32,7 @@
     width: 10%;
     height: 0px;
     display: block;
-    border: 1px solid black;
+    border: 1px solid white;
     top: 17px;
     right:0;
 }
