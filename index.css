@@ -68,13 +68,22 @@ div.container {
 
 }
 
-
-}
 /*nav bar style*/
+#nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
 #nav li {
     margin: 0;
     padding: 0;
 	  border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+#nav li img {
+  margin: 10px;
+  width: 50px;
 }
 
 #nav a:link, #nav a:visited {
