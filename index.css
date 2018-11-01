@@ -132,7 +132,27 @@ width: 2em;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
-
+.middle1{
+  position: absolute;
+  top:40%;
+  left:30%;
+  background-color:#F1B254;
+  padding:1%;
+}
+.middle2{
+  position: absolute;
+  top:80%;
+  left:30%;
+  background-color:#F1B254;
+  padding:1%;
+}
+.middle3{
+  position: absolute;
+  top:107%;
+  left:30%;
+  background-color:#F1B254;
+  padding:1%;
+}
 .tips_photos img {
   width: 100%;
   height: 100%;
@@ -308,4 +328,28 @@ h3 {
       order: 2;
   }
 
+}
+
+.humans_images:hover .humansimages {
+  opacity: 0.3;
+}
+
+.humans_images:hover .middle {
+  size:110%;
+}
+
+.middle1{
+  position: absolute;
+  top:60%;
+  left:45%;
+}
+.middle2{
+  position: absolute;
+  top:200%;
+  left:45%;
+}
+.middle3{
+  position: absolute;
+  top:295%;
+  left:45%;
 }
