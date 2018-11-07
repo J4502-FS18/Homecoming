@@ -96,7 +96,10 @@ div.container {
   text-align: center;
   list-style-type: none;
 }
-
+nav #nav li a{
+  color:whitesmoke;
+  text-decoration: none;
+}
 #nav li img {
   margin: 10px;
   width: 50px;
@@ -317,12 +320,15 @@ h3 {
 }
 
 @media screen and (min-width: 700px) {
-  nav ul {
+  nav #nav {
     display: flex;
+    flex-flow: column;
+    background-color:#F1B254;
   }
-  nav ul li {
+  nav #nav li {
     border-top: none;
   }
+  
   .menu-trigger {
     display: none;
   }
