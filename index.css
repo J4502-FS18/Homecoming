@@ -322,11 +322,13 @@ h3 {
 @media screen and (min-width: 700px) {
   nav #nav {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: center;
     background-color:#F1B254;
   }
   nav #nav li {
     border-top: none;
+    padding:1.8em;
   }
   
   .menu-trigger {
@@ -358,5 +360,8 @@ h3 {
     position: absolute;
     top: 295%;
     left: 45%;
+  }
+  .socialmedia{
+    display: none;
   }
 }
