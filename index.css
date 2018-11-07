@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+#footer {
+    text-align: center;
+}
+
 div.container {
   display: flex;
   padding-left: 30px;
@@ -98,7 +102,7 @@ div.container {
   width: 50px;
 }
 
-#nav a:link, #nav a:visited {
+#nav a:link #nav a:visited {
   display: block;
   color: white;
   background-color: black;
