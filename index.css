@@ -56,7 +56,7 @@ div.container {
   float: left;
   width: 70px;
   height: 70px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .header h1 {
@@ -65,7 +65,7 @@ div.container {
   position: center;
   top: 20px;
   left: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*nav bar style*/
@@ -363,5 +363,19 @@ h3 {
   }
   .socialmedia{
     display: none;
+  }
+  .header img {
+    float: left;
+    width: 151px;
+    height: 151px;
+    padding-left: 50px;
+  }
+  .header h1 {
+    padding: 20px;
+    padding-left: 10px;
+    position: center;
+    top: 20px;
+    left: 0px;
+    font-size: 50px;
   }
 }
