@@ -44,6 +44,7 @@ div.container {
 /*header and nav bar*/
 
 .header {
+  width:100%;
   padding: 10px;
   text-align: center;
   color: black;
@@ -390,17 +391,17 @@ h3 {
   .photos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "d e "
-    "f e";}
-  .center1{
+    "f e ";}
+  #center1{
     grid-area: d;
   }
-  .center2{
+  #center2{
     grid-area: e;
   }
-  .center3{
+  #center3{
     grid-area: f;
   }
 
