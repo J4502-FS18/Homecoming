@@ -410,19 +410,20 @@ h3 {
     "a b"
     "p b";
   }
-  .belowheader .container{
+  .container{
     grid-area:a;
   }
-  .belowheader .photos{
+  .photos{
     grid-area:p;
   }
-  .belowheader .photos{
+  .photos{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "d e .";}
-  .belowheader .photos .center1{
+  .center1{
     grid-area: d;
   }
-  .belowheader .photos .center1{
+  .center1{
     grid-area: e;
   }
 
