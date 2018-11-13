@@ -407,13 +407,25 @@ h3 {
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
     grid-template-areas: 
-    'a b'
-    'p b';
+    "a b"
+    "p b";
   }
-  .container{
+  .belowheader .container{
     grid-area:a;
   }
-  .belowheader.photos{
+  .belowheader .photos{
     grid-area:p;
+  }
+  .belowheader .photos{
+    display: grid;
+    grid-template-areas: "d e .";}
+  .belowheader .photos .center1{
+    grid-area: d;
+  }
+  .belowheader .photos .center1{
+    grid-area: e;
+  }
+
+
   }
 }
