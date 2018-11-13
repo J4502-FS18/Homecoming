@@ -42,13 +42,19 @@ div.container {
 }
 
 .tips_photos {
-  align-items: center;
+  text-align: center;
+	display: table-cell;
+	vertical-align: middle;
   padding-left: 38px;
   padding-right: 38px;
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: space-around;
+  justify-content: center;
   Width: 100%;
+  align-content: center;
+}
+.tips_photos img{
+  width:70%;
 }
 
 /*header and nav bar*/
