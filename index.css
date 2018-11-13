@@ -14,9 +14,8 @@ body {
 }
 
 div.container {
-  display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 38px;
+  padding-right: 38px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
@@ -24,7 +23,7 @@ div.container {
   margin-right: auto;
   text-align: left;
   width: 550px;
-  width: 60%;
+  width: 80%;
   font: black;
 }
 
@@ -47,20 +46,26 @@ div.container {
 .header {
   padding: 10px;
   text-align: center;
-  background: white;
   color: black;
   font-family: 'Raleway', sans-serif, 'Times New Roman';
+  background-color: #F1B254;
+  display:grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+      "a b"
+      "a c";
 }
 
 .header img {
-  float: left;
-  width: 70px;
-  height: 70px;
-  padding-left: 20px;
+  grid-area:a;
+  width: 80px;
+  height: 80px;
+  padding-left: 10px;
 }
 
 .header h1 {
-  padding: 20px;
+  padding: 10px;
   padding-left: 10px;
   position: center;
   top: 20px;
@@ -70,11 +75,13 @@ div.container {
 
 /*nav bar style*/
 
+.header nav .menu-trigger{
+  grid-area:c;
+}
 .menu-trigger {
-  order: 1;
-  float: left;
-  padding-left: 10px;
-  color: #F1B254;
+  float: right;
+  padding-right: 10px;
+  color: rgb(121, 91, 47);
   text-decoration: none;
   font-size: 1.75em;
   width: 2em;
@@ -92,8 +99,7 @@ div.container {
 #nav li {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
+  text-align:left;
   list-style-type: none;
 }
 nav #nav li a{
@@ -116,16 +122,27 @@ nav #nav li a{
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #9b9b9b;
+  background-color: rgb(243, 159, 33);
 }
 
 .socialmedia {
   display: flex;
   justify-content: center;
 }
+.socialmedia img{
+  width: 50px;
+  height: 50px;
+  padding:10px;
+  padding-bottom:0px;
+}
+.photos img{
+  width:90%;
+}
 
 .caption {
   text-align: center;
+  color:whitesmoke;
+  background-color: black;
 }
 
 .humans_images img {
@@ -256,20 +273,6 @@ nav #nav li a{
   right: 0;
 }
 
-p {
-  background-color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  margin: 2% 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-#activity {
-  background-color: white;
-  margin: 5%;
-}
-
 h3 {
   background-color: white;
   font-family: 'Raleway', sans-serif;
@@ -320,6 +323,38 @@ h3 {
 }
 
 @media screen and (min-width: 700px) {
+  .header {
+    background-color: #F1B254;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "a b"
+        "a c";
+        
+  }
+  
+  .header img {
+    grid-area:a;
+    width:150px;
+    height: 150px;
+  }
+  
+  .header h1 {
+    grid-area: b;
+    padding: 20px;
+    padding-left: 10px;
+    position: center;
+    top: 20px;
+    left: 0px;
+    font-size: 50px;
+  }
+  
+  /*nav bar style*/
+  nav ul{
+    display: grid;
+    grid-area: c;
+  }
   nav #nav {
     display: flex;
     flex-flow: row;
@@ -329,6 +364,9 @@ h3 {
   nav #nav li {
     border-top: none;
     padding:1.8em;
+  }
+  nav #nav li a{
+    font-size: 1.5em;
   }
   
   .menu-trigger {
@@ -364,18 +402,18 @@ h3 {
   .socialmedia{
     display: none;
   }
-  .header img {
-    float: left;
-    width: 151px;
-    height: 151px;
-    padding-left: 50px;
+  .belowheader{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'a b'
+    'p b';
   }
-  .header h1 {
-    padding: 20px;
-    padding-left: 10px;
-    position: center;
-    top: 20px;
-    left: 0px;
-    font-size: 50px;
+  .container{
+    grid-area:a;
+  }
+  .belowheader.photos{
+    grid-area:p;
   }
 }
