@@ -285,6 +285,14 @@ h3 {
 
 /*Chengzi end*/
 
+.tips_photos {
+  clear: both;
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
