@@ -279,11 +279,22 @@ h3 {
 
 #footer {
   font-size: 12px;
-  background-color: black;
+  background-color: #F1B254;
   color: white;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 /*Chengzi end*/
+
+.tips_photos {
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  justify-content: center
+}
 
 @media (min-width: 600px) {
   .container {
@@ -389,15 +400,20 @@ h3 {
   }
   .photos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "d e .";}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "d e "
+    "f e";}
   .center1{
     grid-area: d;
   }
-  .center1{
+  .center2{
     grid-area: e;
   }
+  .center3{
+    grid-area: f;
+  }
 
 
   }
-}
