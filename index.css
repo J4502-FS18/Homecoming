@@ -397,15 +397,21 @@ h3 {
   }
   .photos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "d e .";}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "d e "
+    "f e";}
   .center1{
     grid-area: d;
   }
-  .center1{
+  .center2{
     grid-area: e;
   }
+  .center3{
+    grid-area: f;
+  }
 
 
   }
-}
+
