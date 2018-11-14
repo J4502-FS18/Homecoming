@@ -27,6 +27,10 @@ div.container {
   font: black;
 }
 
+.container .best{
+  font-style: bold;
+  font-size: 1em;
+}
 /*lauren trying the nav bar again*/
 
 * {
@@ -40,6 +44,14 @@ div.container {
   width: 5px;
   float: left;
 }
+
+@media screen and (max-width: 600px) {
+    .header img {
+      display: none;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+  }
 
 .tips_photos {
   text-align: center;
@@ -56,6 +68,7 @@ div.container {
 .tips_photos img{
   width:70%;
 }
+
 
 /*header and nav bar*/
 
@@ -82,12 +95,12 @@ div.container {
 }
 
 .header h1 {
-  padding: 10px;
-  padding-left: 10px;
+  padding: 5px;
+  padding-left: 5px;
   position: center;
   top: 20px;
   left: 0px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /*nav bar style*/
@@ -390,7 +403,6 @@ h3 {
     left: 45%;
   }
   .socialmedia{
-
   }
   .twitter-timeline{
     display: grid;
@@ -429,4 +441,36 @@ h3 {
   }
 
 
+  }
+
+  div.tipcontainer {
+    background-color: black;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: "white";
+    width: 550px;
+    width: 80%;
+  }
+
+  div.tipcontainer p{
+    Color: white;
+    font-style: italic;
+    font-size: 0.7em;
+  }
+
+.best{
+  font-style: bold;
+  font-size: 1em;
+}
+
+  @media (min-width: 600px) {
+    .tipcontainer {
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+    }
   }
