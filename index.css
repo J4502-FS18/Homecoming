@@ -403,9 +403,8 @@ h3 {
     left: 45%;
   }
   .socialmedia{
-    display: none;
   }
-  .belowheader{
+  .twitter-timeline{
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
@@ -413,6 +412,10 @@ h3 {
     "a b"
     "p b";
   }
+#twitterembed {
+  grid-area:b;
+}
+
   .container{
     grid-area:a;
   }
@@ -425,7 +428,8 @@ h3 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "d e "
-    "f e ";}
+    "f e ";
+  }
   #center1{
     grid-area: d;
   }
