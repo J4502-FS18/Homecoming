@@ -15,16 +15,15 @@ body {
 
 div.container {
   padding-left: 38px;
-  padding-right: 38px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  width: 550px;
-  width: 80%;
-  font: black;
+ padding-right: 38px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ background-color: white;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: left;
+ width: 550px;
+ width: 80%;
 }
 
 /*lauren trying the nav bar again*/
@@ -111,6 +110,7 @@ div.container {
   padding: 0;
   text-align:left;
   list-style-type: none;
+  text-decoration: none;
 }
 nav #nav li a{
   color:whitesmoke;
@@ -349,6 +349,7 @@ h3 {
   nav #nav li {
     border-top: none;
     padding:1.8em;
+    
   }
   nav #nav li a{
     font-size: 1.5em;
@@ -500,5 +501,3 @@ h6 {
   width:70%;
 }
   /*end tatum stuff for tips.html*/
-
-  
