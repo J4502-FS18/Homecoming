@@ -27,7 +27,7 @@ div.container {
   font: black;
 }
 
-.container .best{
+.best {
   font-style: bold;
   font-size: 1em;
 }
@@ -444,7 +444,7 @@ h3 {
   }
 
   div.tipcontainer {
-    background-color: black;
+    background-color: white;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 10px;
@@ -457,15 +457,11 @@ h3 {
   }
 
   div.tipcontainer p{
-    Color: white;
+    Color: black;
     font-style: italic;
     font-size: 0.7em;
   }
 
-.best{
-  font-style: bold;
-  font-size: 1em;
-}
 
   @media (min-width: 600px) {
     .tipcontainer {
@@ -474,3 +470,26 @@ h3 {
       justify-content: space-around;
     }
   }
+
+
+.containerforalloftips{
+  background-color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+}
+
+.containert1{
+  background-color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+h6 {
+  font-style: bold;
+  font-size: 2em;
+}
