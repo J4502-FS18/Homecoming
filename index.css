@@ -27,10 +27,6 @@ div.container {
   font: black;
 }
 
-.best {
-  font-style: bold;
-  font-size: 1em;
-}
 /*lauren trying the nav bar again*/
 
 * {
@@ -52,23 +48,6 @@ div.container {
       margin-top: 0.5em;
     }
   }
-
-.tips_photos {
-  text-align: center;
-	display: table-cell;
-	vertical-align: middle;
-  padding-left: 38px;
-  padding-right: 38px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: center;
-  Width: 100%;
-  align-content: center;
-}
-.tips_photos img{
-  width:70%;
-}
-
 
 /*header and nav bar*/
 
@@ -124,6 +103,7 @@ div.container {
 #nav ul {
   display: flex;
   flex-flow: column;
+  background-color: #65a8a6;
 }
 
 #nav li {
@@ -443,6 +423,8 @@ h3 {
 
   }
 
+  /*start tatum stuff for tips.html*/
+
   div.tipcontainer {
     background-color: white;
     padding-left: 38px;
@@ -492,4 +474,69 @@ h3 {
 h6 {
   font-style: bold;
   font-size: 2em;
+}
+
+.tips_photos {
+  text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  Width: 100%;
+  align-content: center;
+}
+.tips_photos img{
+  width:70%;
+}
+  /*end tatum stuff for tips.html*/
+
+  nav ul li {
+      display: block;
+      border-top: 1px black solid;
+  }
+
+  nav a {
+      color: #black;
+      display: block;
+      text-decoration: none;
+      padding: 20px 30px;
+  }
+
+  header {
+      display: flex;
+      flex-flow: row;
+      margin: 0;
+      padding: 0 10px;
+  }
+
+  .menu-trigger {
+      order: 1;
+      font-size: 1.75em;
+      width: 2em;
+  }
+  @media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
 }
