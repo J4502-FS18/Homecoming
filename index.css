@@ -27,6 +27,10 @@ div.container {
   font: black;
 }
 
+.container .best{
+  font-style: bold;
+  font-size: 1em;
+}
 /*lauren trying the nav bar again*/
 
 * {
@@ -445,6 +449,11 @@ h3 {
     font-style: italic;
     font-size: 0.7em;
   }
+
+.best{
+  font-style: bold;
+  font-size: 1em;
+}
 
   @media (min-width: 600px) {
     .tipcontainer {
