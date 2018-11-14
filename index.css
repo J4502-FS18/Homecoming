@@ -45,6 +45,14 @@ div.container {
   float: left;
 }
 
+@media screen and (max-width: 600px) {
+    .header img {
+      display: none;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+  }
+
 .tips_photos {
   text-align: center;
 	display: table-cell;
@@ -87,12 +95,12 @@ div.container {
 }
 
 .header h1 {
-  padding: 10px;
-  padding-left: 10px;
+  padding: 5px;
+  padding-left: 5px;
   position: center;
   top: 20px;
   left: 0px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /*nav bar style*/
