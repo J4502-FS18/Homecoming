@@ -386,6 +386,39 @@ h3 {
     left: 45%;
   }
 
+  .alumni-container {
+    background-color: white;
+    margin: 6px -10px;
+    padding: 50px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c"
+  }
+
+  .alumni-cards li {
+    background-color: white;
+    border: none;
+    padding: 50px;
+    border-radius: 1px;
+  }
+
+  .alumni1 {
+    grid-area: a
+  }
+
+  .alumni2 {
+    grid-area: b
+  }
+
+  .alumni3 {
+    grid-area: c
+  }
+
   .socialmedia{
   }
 
