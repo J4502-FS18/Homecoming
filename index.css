@@ -389,15 +389,16 @@ h3 {
   .socialmedia{
   }
 
+
 .cards{
   margin: 6px -10px;
-  padding: 70px;
+  padding: 30px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px 50px;
+  grid-gap: 20px;
   grid-template-areas:
-  "a a b"
+  "a a s"
   "a a b"
   "c d b"
   "e d b"
@@ -410,6 +411,16 @@ h3 {
     border-radius: 1px;
   }
 
+  .socialmedia{
+    grid-area: s
+  }
+
+  #socialbackground {
+    background-color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .twitter-timeline {
     grid-area: b
   }
@@ -420,7 +431,7 @@ h3 {
   }
 
   .center1{
-    grid-area: c
+    grid-area: c;
   }
   .center2{
     grid-area: d
