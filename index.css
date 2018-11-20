@@ -14,8 +14,20 @@ body {
 }
 
 div.container {
-  padding-left: 38px;
-  padding-right: 38px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
+}
+li.container{
+  padding-left: 2px;
+  padding-right: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
@@ -137,18 +149,20 @@ nav #nav li a {
 }
 
 #nav a:hover, #nav a:active {
-  background-color: rgb(243, 159, 33);
+  background-color: rgb(209, 155, 28);
 }
 
 .socialmedia {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  padding:0;
 }
 
 .socialmedia img {
   width: 50px;
   height: 50px;
-  padding: 10px;
+
   padding-bottom: 0px;
 }
 
@@ -195,7 +209,6 @@ nav #nav li a {
   right:0;
   top:0;
   bottom:0;
-
 }
 
 .middle2 {
@@ -502,12 +515,15 @@ nav #nav li a {
   }
   .humans_images:hover .middle1 {
     text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
   .humans_images:hover .middle2 {
     text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
   .humans_images:hover .middle3 {
     text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
  
   .humans_images img {
@@ -547,7 +563,24 @@ nav #nav li a {
   .alumni3 {
     grid-area: c
   }
-  .socialmedia {}
+  .socialmedia .fb{
+    margin: 1em;
+  }
+  .socialmedia .tw{
+    margin: 1em;
+  }
+  .socialmedia .ins{
+    margin: 1em;
+  }
+  .socialmedia .fb:hover {
+  box-shadow: 2px 2px 2px 2px #888888;;
+  }
+  .socialmedia .tw:hover {
+    box-shadow: 2px 2px 2px 2px #888888;;
+    }
+    .socialmedia .ins:hover {
+      box-shadow: 2px 2px 2px 2px #888888;;
+      }
   .cards {
     margin: 6px -10px;
     padding-left: 8px;
@@ -570,8 +603,7 @@ nav #nav li a {
   }
   #socialbackground {
     background-color: white;
-    padding-left: 25px;
-    padding-right: 25px;
+  
   }
   .twitter-timeline {
     grid-area: b
