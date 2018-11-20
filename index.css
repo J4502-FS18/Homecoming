@@ -105,12 +105,9 @@ li {
   display: none;
 }
 
-#nav ul {
-  display: flex;
-  flex-flow: column;
-}
-
 #nav li {
+  display:flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -121,7 +118,7 @@ li {
 nav #nav li a {
   color: whitesmoke;
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 0em;
 }
 
 #nav li img {
@@ -167,7 +164,9 @@ nav #nav li a {
   text-align: center;
   color: black;
 }
-
+.humans_images{
+  background-color:  rgb(247, 211, 129);
+}
 .humans_images img {
   padding: 1em 1em 1em 1em;
   width: 100%;
@@ -190,6 +189,12 @@ nav #nav li a {
   background-color: #E6B02E;
   padding: 1%;
   text-align: center;
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 
 }
 
@@ -197,14 +202,24 @@ nav #nav li a {
   background-color: #E6B02E;
   padding: 1%;
   text-align: center;
-
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
 
 .middle3 {
   background-color: #E6B02E;
   padding: 1%;
   text-align: center;
-
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
 
 #head {
@@ -462,7 +477,8 @@ nav #nav li a {
   }
   nav #nav li {
     border-top: none;
-    padding: 1.8em;
+    padding: 1em;
+  
   }
   nav #nav li a {
     font-size: 1.5em;
@@ -483,6 +499,15 @@ nav #nav li a {
   }
   .humans_images:hover .humansimages {
     opacity: 0.8;
+  }
+  .humans_images:hover .middle1 {
+    text-decoration: underline;
+  }
+  .humans_images:hover .middle2 {
+    text-decoration: underline;
+  }
+  .humans_images:hover .middle3 {
+    text-decoration: underline;
   }
  
   .humans_images img {
