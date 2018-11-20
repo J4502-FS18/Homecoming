@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="menu.js" type="text/javascript"></script>
+    <script src="slider.js" type="text/javascript"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -47,38 +48,125 @@
 
     </div>
 
-</br>
+    </br>
     <div class="headline">
         <span class="line1"></span>
         <span class="line2"></span>
         <span class="txt">History of Homecoming</span>
     </div>
-</br>
-<div class="containerforalloftips">
-</br>
-    <div class="container">
-    <p>
-        Back in 1911, when Chester Brewer invited alumni to come home for the Missouri-Kansas football game, he couldn't have envisioned that the event would become Mizzou's biggest annual tradition. Rather, Brewer, Mizzou's football coach and athletic director, was trying to circumvent a problem. Until then, the Missouri-Kansas game had been held in Kansas City, Mo., attracting scores of alumni and generating significantincome for both schools. When the Missouri Valley Intercollegiate Athletic Association declared that conference games would have to be played on college campuses, Brewer was concerned about whether alumni would make the trip to Columbia. Thus, his invitation for alumni to "come home" was a call that drew a crowd of 9,000-plus.
-    </p>
-    </div>
-</br>
+    </br>
+    <div class="containerforalloftips">
+        </br>
+        <div class="container">
+            <p>
+                Back in 1911, when Chester Brewer invited alumni to come home for the Missouri-Kansas football game, he couldn't have envisioned
+                that the event would become Mizzou's biggest annual tradition. Rather, Brewer, Mizzou's football coach and
+                athletic director, was trying to circumvent a problem. Until then, the Missouri-Kansas game had been held
+                in Kansas City, Mo., attracting scores of alumni and generating significantincome for both schools. When
+                the Missouri Valley Intercollegiate Athletic Association declared that conference games would have to be
+                played on college campuses, Brewer was concerned about whether alumni would make the trip to Columbia. Thus,
+                his invitation for alumni to "come home" was a call that drew a crowd of 9,000-plus.
+            </p>
+        </div>
+
+        <!--
+    </br>
 </br>
     <img class="img" src="history4.jpg" alt="Historic photo">
+</br>
+</br>
+-->
+        <!-- Container for the image gallery -->
+        <div class="slidercontainer">
 
-</br>
-</br>
-    <div class="container">
-    <p>
-      For years, third-party ammunition has fueled debates about which university can be credited with starting Homecoming.Several previously published newspaper articles report that the NCAA credits Mizzou with the first Homecoming - though NCAA librarian Ellen Summers says nothing in NCAA resords definitively indicates that Mizzou's 1911 Homecoming was the first. In the past decade, several universities have also challenged Mizzou's claim as the tradition's birthplace.
-    </p>
+
+            <!-- Full-width images with number text -->
+            <div class="Slides">
+                <div class="numbertext">1 / 4</div>
+                <img src="history1.jpg" style="width:100%">
+            </div>
+
+            <div class="Slides">
+                <div class="numbertext">2 / 4</div>
+                <img src="history4.jpg" style="width:100%">
+            </div>
+            <div class="Slides">
+                <div class="numbertext">3 / 4</div>
+                <img src="history3.jpg" style="width:100%">
+            </div>
+
+            <div class="Slides">
+                <div class="numbertext">4 / 4</div>
+                <img src="history7.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="history1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Homecoming Royalty of 1981 ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="history4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Sophomores pose aboard their homecoming float in 1921.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="history3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sporting black and gold beanies, freshman in 1911-12 follow commands of sophomores.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="history7.jpg" style="width:100%" onclick="currentSlide(4)" alt="VOX 1928 Homecoming fashion">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container">
+            <p>
+                For years, third-party ammunition has fueled debates about which university can be credited with starting Homecoming.Several
+                previously published newspaper articles report that the NCAA credits Mizzou with the first Homecoming - though
+                NCAA librarian Ellen Summers says nothing in NCAA resords definitively indicates that Mizzou's 1911 Homecoming
+                was the first. In the past decade, several universities have also challenged Mizzou's claim as the tradition's
+                birthplace.
+            </p>
+        </div>
+        <h3 class="timeline">Homecoming Timeline</h3>
+        <span class="line"></span> 
+        <div class="timeline">
+              
+            <p>1911: 
+                </br>In their first Homecoming, the Tigers took on the Kansas Jayhawks. "Come Back Home" was a main slogan in
+                hopes of bringing back older graduates and boosting attendance. Ten thousand people crowded the stadium.
+            </p>
+            <p>1918:  </br>Homecoming was canceled due to a widespread flu outbreak.</p>
+            <p>1928:  </br>The first homecoming dance was held as other new traditions emerged.</p>
+            <p>1935:  </br>House decorations became popular in Greektown.</p>
+            <p>1940s:  </br>The "Thundering Thousand," a student pep group, was in full swing at all games to cheer the Tigers to
+                victory. By the 1950s, "Romp, Stomp, Chomp" had become the motto adopted for pep rallies.</p>
+            <p>1977:  </br>The student body held its first election of a Homecoming king and queen.</p>
+            <p>1992:  </br>Mort Walker — and Beetle Bailey — returned to campus to celebrate Homecoming and instill the tradition
+                of Beetle Bailey.</p>
+            <p> 1995:  </br>Coach Don Faurot died the week of Homecoming. A statue outside Faurot Field was erected in his honor.</p>
+            <p>2010: </br>In their 99th Homecoming, the Tigers upset Oklahoma, and thousands of fans stormed the field to celebrate.
+                Thirty fans who sprinted early in celebration were arrested, but they were soon let off without any charges.</p>
+        </div>
+        </br>
+        </br>
     </div>
-  </br>
-  </br>
-</div>
 
     <p id="footer">
-      <img src="MISSOURIAN Blue.png" alt="Missourian Logo" style="width:270px; height:85px;" class="center">
-      Content copyright © 2018 Columbia Missourian.</p>
+        <img src="MISSOURIAN Blue.png" alt="Missourian Logo" style="width:270px; height:85px;" class="center"> Content copyright © 2018 Columbia Missourian.</p>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>

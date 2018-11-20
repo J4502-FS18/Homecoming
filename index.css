@@ -10,22 +10,23 @@ body {
 }
 
 #footer {
-    text-align: center;
+  text-align: center;
 }
 
 div.container {
-padding-left: 38px;
- padding-right: 38px;
- padding-top: 10px;
- padding-bottom: 10px;
- background-color: white;
- margin-left: auto;
- margin-right: auto;
- text-align: left;
- width: 550px;
- width: 80%;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
 }
-li{
+
+li {
   list-style: none;
 }
 
@@ -44,32 +45,33 @@ li{
 }
 
 @media screen and (max-width: 600px) {
-    .header img {
-      display: none;
-      width: 100%;
-      margin-top: 0.5em;
-    }
+  .header img {
+    display: none;
+    width: 100%;
+    margin-top: 0.5em;
   }
+  .event img {
+    display: none;
+  }
+}
 
 /*header and nav bar*/
 
 .header {
-  width:100%;
+  width: 100%;
   /*padding: 10px;*/
   text-align: center;
   color: black;
   font-family: 'Raleway', sans-serif, 'Times New Roman';
-  background-color: #F1B254;
-  display:grid;
-  grid-template-columns: 100px 1fr;
+  background-color: #E6B02E;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
   grid-gap: 5px;
-  grid-template-areas:
-      "a b"
-      "a c";
+  grid-template-areas: "a b" "a c";
 }
 
 .header img {
-  grid-area:a;
+  grid-area: a;
   width: 80px;
   height: 80px;
   padding-left: 10px;
@@ -86,9 +88,10 @@ li{
 
 /*nav bar style*/
 
-.header nav .menu-trigger{
-  grid-area:c;
+.header nav .menu-trigger {
+  grid-area: c;
 }
+
 .menu-trigger {
   float: right;
   padding-right: 10px;
@@ -110,17 +113,17 @@ li{
 #nav li {
   margin: 0;
   padding: 0;
-  text-align:left;
+  text-align: left;
   list-style-type: none;
   text-decoration: none;
 }
-nav #nav li a{
-  color:whitesmoke;
+
+nav #nav li a {
+  color: whitesmoke;
   text-decoration: none;
-  padding:0.5em 1em;
-
-
+  padding: 0.5em 1em;
 }
+
 #nav li img {
   margin: 10px;
   width: 50px;
@@ -144,25 +147,25 @@ nav #nav li a{
   display: flex;
   justify-content: center;
 }
-.socialmedia img{
+
+.socialmedia img {
   width: 50px;
   height: 50px;
-  padding:10px;
-  padding-bottom:0px;
+  padding: 10px;
+  padding-bottom: 0px;
 }
-.socialmedia a{
+
+.socialmedia a {
   text-decoration: none;
 }
 
-
-.photos img{
-  width:90%;
+.photos img {
+  width: 90%;
 }
 
 .caption {
   text-align: center;
-  color:black;
-
+  color: black;
 }
 
 .humans_images img {
@@ -180,7 +183,7 @@ nav #nav li a{
   position: absolute;
   top: 40%;
   left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
 }
 
@@ -188,7 +191,7 @@ nav #nav li a{
   position: absolute;
   top: 80%;
   left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
 }
 
@@ -196,11 +199,9 @@ nav #nav li a{
   position: absolute;
   top: 107%;
   left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
 }
-
-
 
 #head {
   text-align: center;
@@ -236,7 +237,7 @@ nav #nav li a{
 }
 
 .txt {
-  color: #F1B254;
+  color: #E6B02E;
   vertical-align: middle;
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -264,16 +265,12 @@ nav #nav li a{
   right: 0;
 }
 
-h3 {
-  background-color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  margin-left: 5%;
-  margin-right: 5%;
+.event p {
+  padding: 1em 1em 0em 1em;
 }
 
-.time {
-  font-style: italic;
+.event h3 {
+  padding: 1em 1em 0em 1em;
 }
 
 .img {
@@ -299,10 +296,119 @@ h3 {
 
 #footer {
   font-size: 12px;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   color: white;
   padding-top: .75rem;
   padding-bottom: .75rem;
+}
+
+/*slider*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.slidercontainer {
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+}
+
+/* Hide the images by default*/
+
+.Slides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images 
+.cursor {
+  cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.caption-container #caption {
+  color: white;
+  size: 1em;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: black;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
 }
 
 /*Chengzi end*/
@@ -319,22 +425,17 @@ h3 {
 
 @media screen and (min-width: 700px) {
   .header {
-    background-color: #F1B254;
-    display:grid;
+    background-color: #E6B02E;
+    display: grid;
     grid-template-columns: 150px 1fr;
     grid-gap: 20px;
-    grid-template-areas:
-        "a b"
-        "a c";
-
+    grid-template-areas: "a b" "a c";
   }
-
   .header img {
-    grid-area:a;
-    width:150px;
+    grid-area: a;
+    width: 150px;
     height: 150px;
   }
-
   .header h1 {
     grid-area: b;
     padding: 20px;
@@ -344,9 +445,8 @@ h3 {
     left: 0px;
     font-size: 50px;
   }
-
   /*nav bar style*/
-  nav ul{
+  nav ul {
     display: grid;
     grid-area: c;
   }
@@ -354,17 +454,15 @@ h3 {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background-color:#F1B254;
+    background-color: #E6B02E;
   }
   nav #nav li {
     border-top: none;
-    padding:1.8em;
-
+    padding: 1.8em;
   }
-  nav #nav li a{
+  nav #nav li a {
     font-size: 1.5em;
   }
-
   .menu-trigger {
     display: none;
   }
@@ -395,7 +493,6 @@ h3 {
     top: 295%;
     left: 45%;
   }
-
   .alumni-container {
     background-color: white;
     margin: 6px -10px;
@@ -404,145 +501,167 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
-    grid-template-areas:
-    "a a a"
-    "b b b"
-    "c c c"
+    grid-template-areas: "a a a" "b b b" "c c c"
   }
-
   .alumni-cards li {
     background-color: white;
     border: none;
     padding: 50px;
     border-radius: 1px;
   }
-
   .alumni1 {
     grid-area: a
   }
-
   .alumni2 {
     grid-area: b
   }
-
   .alumni3 {
     grid-area: c
   }
-
-  .socialmedia{
+  .socialmedia {}
+  .cards {
+    margin: 6px -10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "a a s" "a a b" "c d b" "e g b"
   }
-
-
-.cards{
-  margin: 6px -10px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-  "a a s"
-  "a a b"
-  "c d b"
-  "e g b"
-}
-
-  .cards li{
+  .cards li {
     border: none;
     padding: 20px;
     border-radius: 1px;
   }
-
-  .socialmedia{
+  .socialmedia {
     grid-area: s
   }
-
   #socialbackground {
     background-color: white;
     padding-left: 25px;
     padding-right: 25px;
   }
-
   .twitter-timeline {
     grid-area: b
   }
-
-  .container{
+  .container {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     grid-area: a
   }
-
-  #center1{
+  #center1 {
     grid-area: c;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     margin-left: 1em;
   }
-  #center2{
+  #center2 {
     grid-area: d;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     margin-left: 1em;
   }
-  #center3{
-    grid-area:e;
-    background-color:whitesmoke;
+  #center3 {
+    grid-area: e;
+    background-color: whitesmoke;
     margin-left: 1em;
   }
-  #center4{
-    grid-area:g;
-    background-color:whitesmoke;
+  #center4 {
+    grid-area: g;
+    background-color: whitesmoke;
     margin-left: 1em;
   }
-
-
+  .events {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
   }
-
-  /*start tatum stuff for tips.html*/
-
-  div.tipcontainer {
-    background-color: white;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    color: "white";
-    width: 550px;
-    width: 80%;
+  .event {
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 211, 129);
   }
-
-  div.tipcontainer p{
-    Color: black;
-    font-style: italic;
-    font-size: 0.7em;
+  .event img {
+    width: 15%;
+    height: 15%;
+    padding-top: 1.5em;
   }
-
-
-  @media (min-width: 600px) {
-    .tipcontainer {
-      flex-direction: row;
-      justify-content: center;
-      justify-content: space-around;
-    }
+  .event h3 {
+    margin: 0;
   }
+  .event .p {
+    margin: 0em 2em;
+  }
+  .event p {
+    margin: 1em 0em;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: row;
+  }
+  .timeline {
+    padding: 1em 1em 0em 1em;
+  }
+  .timeline p {
+    margin: 2em 1em 0em 1em;
+    padding: 0.3em;
+    width: 20%;
+    background-color: rgb(247, 211, 129);
+  }
+  .line {
+    position: relative;
+    width: 98%;
+    height: 0px;
+    display: block;
+    border: 3px solid grey;
+    top: 17px;
+    margin: auto;
+  }
+}
 
+/*start tatum stuff for tips.html*/
 
-.containerforalloftips{
+div.tipcontainer {
+  background-color: white;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: "white";
+  width: 550px;
+  width: 80%;
+}
+
+div.tipcontainer p {
+  Color: black;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+@media (min-width: 600px) {
+  .tipcontainer {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+
+.containerforalloftips {
   background-color: white;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 8px;
   padding-bottom: 8px;
-
 }
 
-.containert1{
+.containert1 {
   background-color: white;
   padding-left: 8px;
   padding-right: 8px;
@@ -557,8 +676,8 @@ h6 {
 
 .tips_photos {
   text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
   padding-left: 38px;
   padding-right: 38px;
   padding-top: 10px;
@@ -567,7 +686,9 @@ h6 {
   Width: 100%;
   align-content: center;
 }
-.tips_photos img{
-  width:70%;
+
+.tips_photos img {
+  width: 70%;
 }
-  /*end tatum stuff for tips.html*/
+
+/*end tatum stuff for tips.html*/
