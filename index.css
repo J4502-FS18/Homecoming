@@ -349,7 +349,7 @@ nav #nav li a {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 70%;
+  width: 80%;
 }
 
 /* Hide the images by default*/
@@ -484,7 +484,7 @@ nav #nav li a {
   }
   nav #nav {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     background-color: #E6B02E;
   }
@@ -617,22 +617,22 @@ nav #nav li a {
   }
   #center1 {
     grid-area: c;
-    background-color: whitesmoke;
+   
     margin-left: 1em;
   }
   #center2 {
     grid-area: d;
-    background-color: whitesmoke;
+   
     margin-left: 1em;
   }
   #center3 {
     grid-area: e;
-    background-color: whitesmoke;
+   
     margin-left: 1em;
   }
   #center4 {
     grid-area: g;
-    background-color: whitesmoke;
+   
     margin-left: 1em;
   }
   .events {
