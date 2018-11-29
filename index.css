@@ -10,20 +10,36 @@ body {
 }
 
 #footer {
-    text-align: center;
+  text-align: center;
 }
 
 div.container {
-  padding-left: 38px;
- padding-right: 38px;
- padding-top: 10px;
- padding-bottom: 10px;
- background-color: white;
- margin-left: auto;
- margin-right: auto;
- text-align: left;
- width: 550px;
- width: 80%;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
+}
+li.container{
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
+}
+
+li {
+  list-style: none;
 }
 
 /*lauren trying the nav bar again*/
@@ -41,32 +57,33 @@ div.container {
 }
 
 @media screen and (max-width: 600px) {
-    .header img {
-      display: none;
-      width: 100%;
-      margin-top: 0.5em;
-    }
+  .header img {
+    display: none;
+    width: 100%;
+    margin-top: 0.5em;
   }
+  .event img {
+    display: none;
+  }
+}
 
 /*header and nav bar*/
 
 .header {
-  width:100%;
-  padding: 10px;
+  width: 100%;
+  /*padding: 10px;*/
   text-align: center;
   color: black;
   font-family: 'Raleway', sans-serif, 'Times New Roman';
-  background-color: #F1B254;
-  display:grid;
-  grid-template-columns: 100px 1fr;
+  background-color: #E6B02E;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
   grid-gap: 5px;
-  grid-template-areas:
-      "a b"
-      "a c";
+  grid-template-areas: "a b" "a c";
 }
 
 .header img {
-  grid-area:a;
+  grid-area: a;
   width: 80px;
   height: 80px;
   padding-left: 10px;
@@ -83,9 +100,10 @@ div.container {
 
 /*nav bar style*/
 
-.header nav .menu-trigger{
-  grid-area:c;
+.header nav .menu-trigger {
+  grid-area: c;
 }
+
 .menu-trigger {
   float: right;
   padding-right: 10px;
@@ -99,23 +117,22 @@ div.container {
   display: none;
 }
 
-#nav ul {
-  display: flex;
-  flex-flow: column;
-  background-color: #65a8a6;
-}
-
 #nav li {
+  display:flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
-  text-align:left;
+  text-align: left;
   list-style-type: none;
   text-decoration: none;
 }
-nav #nav li a{
-  color:whitesmoke;
+
+nav #nav li a {
+  color: whitesmoke;
   text-decoration: none;
+  padding: 0em;
 }
+
 #nav li img {
   margin: 10px;
   width: 50px;
@@ -132,32 +149,48 @@ nav #nav li a{
 }
 
 #nav a:hover, #nav a:active {
-  background-color: rgb(243, 159, 33);
+  background-color: rgb(209, 155, 28);
 }
 
 .socialmedia {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  padding:0;
 }
-.socialmedia img{
+
+.socialmedia img {
   width: 50px;
   height: 50px;
-  padding:10px;
-  padding-bottom:0px;
+
+  padding-bottom: 0px;
 }
-.photos img{
-  width:90%;
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.photos img {
+  width: 90%;
 }
 
 .caption {
   text-align: center;
-  color:whitesmoke;
-  background-color: black;
+  color: black;
 }
-
+.humans_images{
+  background-color:  rgb(247, 211, 129);
+}
 .humans_images img {
+  padding: 1em 1em 1em 1em;
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background-color:  rgb(247, 211, 129);
 }
 
 .humans_images a {
@@ -167,30 +200,40 @@ nav #nav li a{
 }
 
 .middle1 {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
+  text-align: center;
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
 
 .middle2 {
-  position: absolute;
-  top: 80%;
-  left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
+  text-align: center;
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
 
 .middle3 {
-  position: absolute;
-  top: 107%;
-  left: 30%;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   padding: 1%;
+  text-align: center;
+  width:30%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
-
-
 
 #head {
   text-align: center;
@@ -226,7 +269,7 @@ nav #nav li a{
 }
 
 .txt {
-  color: #F1B254;
+  color: #E6B02E;
   vertical-align: middle;
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -254,16 +297,12 @@ nav #nav li a{
   right: 0;
 }
 
-h3 {
-  background-color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  margin-left: 5%;
-  margin-right: 5%;
+.event p {
+  padding: 1em 1em 0em 1em;
 }
 
-.time {
-  font-style: italic;
+.event h3 {
+  padding: 1em 1em 0em 1em;
 }
 
 .img {
@@ -277,8 +316,13 @@ h3 {
   clear: both;
   display: block;
   margin: auto;
-  width: 90%;
-  height: auto;
+  width: 50%;
+  height: auto;}
+
+.mapcontainer{
+  background-color: rgb(247, 211, 129);
+  margin: 3em;
+
 }
 
 .h2 {
@@ -289,10 +333,119 @@ h3 {
 
 #footer {
   font-size: 12px;
-  background-color: #F1B254;
+  background-color: #E6B02E;
   color: white;
   padding-top: .75rem;
   padding-bottom: .75rem;
+}
+
+/*slider*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.slidercontainer {
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+}
+
+/* Hide the images by default*/
+
+.Slides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images 
+.cursor {
+  cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.caption-container #caption {
+  color: white;
+  size: 1em;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: black;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
 }
 
 /*Chengzi end*/
@@ -309,22 +462,17 @@ h3 {
 
 @media screen and (min-width: 700px) {
   .header {
-    background-color: #F1B254;
-    display:grid;
+    background-color: #E6B02E;
+    display: grid;
     grid-template-columns: 150px 1fr;
-    grid-gap: 10px;
-    grid-template-areas:
-        "a b"
-        "a c";
-
+    grid-gap: 20px;
+    grid-template-areas: "a b" "a c";
   }
-
   .header img {
-    grid-area:a;
-    width:150px;
+    grid-area: a;
+    width: 150px;
     height: 150px;
   }
-
   .header h1 {
     grid-area: b;
     padding: 20px;
@@ -334,9 +482,8 @@ h3 {
     left: 0px;
     font-size: 50px;
   }
-
   /*nav bar style*/
-  nav ul{
+  nav ul {
     display: grid;
     grid-area: c;
   }
@@ -344,17 +491,16 @@ h3 {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background-color:#F1B254;
+    background-color: #E6B02E;
   }
   nav #nav li {
     border-top: none;
-    padding:1.8em;
-
+    padding: 1em;
+  
   }
-  nav #nav li a{
+  nav #nav li a {
     font-size: 1.5em;
   }
-
   .menu-trigger {
     display: none;
   }
@@ -364,28 +510,39 @@ h3 {
   nav {
     order: 2;
   }
+ 
+ 
+  .humans_images{
+    text-align: center;
+  }
   .humans_images:hover .humansimages {
-    opacity: 0.3;
+    opacity: 0.8;
   }
-  .humans_images:hover .middle {
-    size: 110%;
+  .humans_images:hover .middle1 {
+    text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
-  .middle1 {
-    position: absolute;
-    top: 60%;
-    left: 45%;
+  .humans_images:hover .middle2 {
+    text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
-  .middle2 {
-    position: absolute;
-    top: 200%;
-    left: 45%;
+  .humans_images:hover .middle3 {
+    text-decoration: underline;
+    box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
-  .middle3 {
-    position: absolute;
-    top: 295%;
-    left: 45%;
+ 
+  .humans_images img {
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color:  rgb(247, 211, 129);
   }
-
+   
+ 
   .alumni-container {
     background-color: white;
     margin: 6px -10px;
@@ -394,135 +551,183 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
-    grid-template-areas:
-    "a a a"
-    "b b b"
-    "c c c"
+    grid-template-areas: "a a a" "b b b" "c c c"
   }
-
   .alumni-cards li {
     background-color: white;
     border: none;
     padding: 50px;
     border-radius: 1px;
   }
-
   .alumni1 {
     grid-area: a
   }
-
   .alumni2 {
     grid-area: b
   }
-
   .alumni3 {
     grid-area: c
   }
-
-  .socialmedia{
+  .socialmedia .fb{
+    margin: 1em;
   }
-
-
-.cards{
-  margin: 6px -10px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-  "a a s"
-  "a a b"
-  "c d b"
-  "e d b"
-}
-
-  .cards li{
-    background-color: white;
+  .socialmedia .tw{
+    margin: 1em;
+  }
+  .socialmedia .ins{
+    margin: 1em;
+  }
+  .socialmedia .fb:hover {
+  box-shadow: 2px 2px 2px 2px #888888;;
+  }
+  .socialmedia .tw:hover {
+    box-shadow: 2px 2px 2px 2px #888888;;
+    }
+    .socialmedia .ins:hover {
+      box-shadow: 2px 2px 2px 2px #888888;;
+      }
+  .cards {
+    margin: 6px -10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "a a s" "a a b" "c d b" "e g b"
+  }
+  .cards li {
     border: none;
     padding: 20px;
     border-radius: 1px;
   }
-
-  .socialmedia{
+  .socialmedia {
     grid-area: s
   }
-
   #socialbackground {
-    background-color: black;
-    padding-left: 25px;
-    padding-right: 25px;
+    background-color: white;
+  
   }
-
   .twitter-timeline {
     grid-area: b
   }
-
-  .container{
+  .container {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     grid-area: a
   }
-
-  .center1{
+  #center1 {
     grid-area: c;
+   
+    margin-left: 1em;
   }
-  .center2{
-    grid-area: d
+  #center2 {
+    grid-area: d;
+   
+    margin-left: 1em;
   }
-  .center3{
-    grid-area:e
+  #center3 {
+    grid-area: e;
+   
+    margin-left: 1em;
   }
-
-
+  #center4 {
+    grid-area: g;
+   
+    margin-left: 1em;
   }
-
-  /*start tatum stuff for tips.html*/
-
-  div.tipcontainer {
-    background-color: white;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    color: "white";
-    width: 550px;
-    width: 80%;
+  .events {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
   }
-
-  div.tipcontainer p{
-    Color: black;
-    font-style: italic;
-    font-size: 0.7em;
+  .event {
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 211, 129);
   }
-
-
-  @media (min-width: 600px) {
-    .tipcontainer {
-      flex-direction: row;
-      justify-content: center;
-      justify-content: space-around;
-    }
+  .event img {
+    width: 15%;
+    height: 15%;
+    padding-top: 1.5em;
   }
+  .event h3 {
+    margin: 0;
+  }
+  .event .p {
+    margin: 0em 2em;
+  }
+  .event p {
+    margin: 1em 0em;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: row;
+  }
+  .timeline {
+    padding: 1em 1em 0em 1em;
+  }
+  .timeline p {
+    margin: 2em 1em 0em 1em;
+    padding: 0.3em;
+    width: 20%;
+    background-color: rgb(247, 211, 129);
+  }
+  .line {
+    position: relative;
+    width: 98%;
+    height: 0px;
+    display: block;
+    border: 3px solid grey;
+    top: 17px;
+    margin: auto;
+  }
+}
 
+/*start tatum stuff for tips.html*/
 
-.containerforalloftips{
+div.tipcontainer {
+  background-color: white;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: "white";
+  width: 550px;
+  width: 80%;
+}
+
+div.tipcontainer p {
+  Color: black;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+@media (min-width: 600px) {
+  .tipcontainer {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+
+.containerforalloftips {
   background-color: white;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 8px;
   padding-bottom: 8px;
-
 }
 
-.containert1{
+.containert1 {
   background-color: white;
   padding-left: 8px;
   padding-right: 8px;
@@ -537,8 +742,8 @@ h6 {
 
 .tips_photos {
   text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
   padding-left: 38px;
   padding-right: 38px;
   padding-top: 10px;
@@ -547,7 +752,9 @@ h6 {
   Width: 100%;
   align-content: center;
 }
-.tips_photos img{
-  width:70%;
+
+.tips_photos img {
+  width: 70%;
 }
-  /*end tatum stuff for tips.html*/
+
+/*end tatum stuff for tips.html*/
