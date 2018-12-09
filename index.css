@@ -616,7 +616,11 @@ nav #nav li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    grid-template-areas: "a a s" "a a b" "c d b" "e g b"
+    grid-template-areas:
+    "a a . s ."
+    "a a . b ."
+    "c d . b ."
+    "c d . b ."
   }
   .cards li {
     border: none;
@@ -640,26 +644,15 @@ nav #nav li a {
     padding-bottom: 8px;
     grid-area: a
   }
-  #center1 {
-    grid-area: c;
 
-    margin-left: 1em;
-  }
-  #center2 {
+  .slideshow {
+    padding-left:20px;
+    padding-right:8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     grid-area: d;
-
-    margin-left: 1em;
   }
-  #center3 {
-    grid-area: e;
 
-    margin-left: 1em;
-  }
-  #center4 {
-    grid-area: g;
-
-    margin-left: 1em;
-  }
   .events {
     display: flex;
     flex-direction: column;
