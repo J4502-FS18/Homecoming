@@ -83,26 +83,29 @@
 				</p>
 			</li>
 
+<script>
+	var i = 0;
+	var images = [];
+	var time = 2000;
+	images [0] = "home1.jpg";
+	images [1] = "home3.jpg";
+	images [2] = "home5.png";
+	images [3] = "home6.png";
+	function changeImg(){
+		document.slide.src = images [i];
+		if(i <images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+		setTimeout ("changeImg()", time);
+	}
+	window.onload = changeImg;
+</script>
 
-		
-		<!--
-		<li id="center1">
-				<img src="home1.jpg" alt="Truman the Tiger rallying the crowd" class="center" style="width:370px;height:225px">
-				<p class=caption>Truman the Tiger rallying the crowd</p>
-			</li>
-			<li id="center2">
-				<img src="home3.jpg" alt="Parading through Hitt Street" class="center" style="width:370px;height:225px">
-				<p class=caption>Parading through Hitt Street</p>
-			</li>
-			<li id="center3">
-				<img src="home5.png" alt="In it to win it" class="center" style="width:370px;height:240px">
-				<p class=caption>In it to win it</p>
-			</li>
-			<li id="center4">
-				<img src="home6.png" alt="In it to win it" class="center" style="width:370px;height:240px">
-				<p class=caption>Band members line up to play </p>
-			</li>
-		-->
+<img name="slide" width="600">
+
+
 
 
 		</div>
