@@ -56,64 +56,62 @@
 		<!-- Rosie's part below here -->
 		<div class="cards">
 
-			<li class="socialmedia">
-				<div id="socialbackground">
-					<a href="https://www.facebook.com/MizzouFootballShowMe/">
-						<img src="FB.png" class="fb">
-					</a>
-					<a href="https://twitter.com/MizzouFootball?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-						<img src="twitter.png" class="tw">
-					</a>
-					<a href="https://www.instagram.com/mizzoufootball/?hl=en" >
-						<img src="insta.png" class="ins">
-					</a>
-				</div>
-			</li>
+						<li class="socialmedia">
+							<div id="socialbackground">
+								<a href="https://www.facebook.com/MizzouFootballShowMe/">
+									<img src="FB.png" class="fb">
+								</a>
+								<a href="https://twitter.com/MizzouFootball?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+									<img src="twitter.png" class="tw">
+								</a>
+								<a href="https://www.instagram.com/mizzoufootball/?hl=en" >
+									<img src="insta.png" class="ins">
+								</a>
+							</div>
+						</li>
 
-			<a class="twitter-timeline" data-width="500" data-height="750" href="https://twitter.com/MU_Homecoming?ref_src=twsrc%5Etfw">Tweets by MU_Homecoming</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<a class="twitter-timeline" data-width="400" data-height="750" href="https://twitter.com/MU_Homecoming?ref_src=twsrc%5Etfw">Tweets by MU_Homecoming</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-			<li class="container">
-				<p>Welcome to the Mizzou Homecoming page, part of the Columbia Missourian. Here, you'll find everything you need to know
-					about the big day. </br>
-					Follow the Mizzou Homecoming Twitter page to stay up-to-date by the minute, read up on your history so you can win that tailgate
-					trivia game, and check out our events postings so you don't miss anything happening downtown. Use Tiger Tips to make
-					driving downtowna a bit more bearable or save a copy of the stadium map to your phone so you know which gate to enter.
-					Interested in alumni returning or who's in the court this year? Humans of Homecoming has you covered.
-				</p>
-			</li>
+						<li class="container">
+							<p>Welcome to the Mizzou Homecoming page, part of the Columbia Missourian. Here, you'll find everything you need to know
+								about the big day. </br></p>
+								<p>
+								Follow the Mizzou Homecoming Twitter page to stay up-to-date by the minute, read up on your history so you can win that tailgate
+								trivia game, and check out our events postings so you don't miss anything happening downtown. Use Tiger Tips to make
+								driving downtowna a bit more bearable or save a copy of the stadium map to your phone so you know which gate to enter.
+								Interested in alumni returning or who's in the court this year? Humans of Homecoming has you covered.
+							</p>
+						</li>
 
-<script>
-	var i = 0;
-	var images = [];
-	var time = 2000;
-	images [0] = "home1.jpg";
-	images [1] = "home3.jpg";
-	images [2] = "home5.png";
-	images [3] = "home6.png";
-	function changeImg(){
-		document.slide.src = images [i];
-		if(i <images.length - 1){
-			i++;
-		} else {
-			i = 0;
-		}
-		setTimeout ("changeImg()", time);
-	}
-	window.onload = changeImg;
-</script>
+			<div class="slideshow">
+				<script>
+					var i = 0;
+					var images = [];
+					var time = 2000;
+					images [0] = "home1.jpg";
+					images [1] = "home3.jpg";
+					images [2] = "home5.png";
+					images [3] = "home6.png";
+					function changeImg(){
+						document.slide.src = images [i];
+						if(i <images.length - 1){
+							i++;
+						} else {
+							i = 0;
+						}
+						setTimeout ("changeImg()", time);
+					}
+					window.onload = changeImg;
+				</script>
 
-<img name="slide" width="600">
-
-
-
-
-		</div>
+				<img name="slide" width="600">
+			</div>
 	</div>
 
 
 	<p id="footer">
-		<img src="MISSOURIAN Blue.png" alt="Missourian Logo" style="width:270px; height:85px;" class="center"> Content copyright © 2018 Columbia Missourian.
+		<img src="MISSOURIAN Blue.png" alt="Missourian Logo" style="width:270px;" class="center"> Content copyright © 2018 Columbia Missourian.
 	</p>
 </body>
 
