@@ -558,6 +558,21 @@ nav #nav li a {
 
   }
 
+  .alumni1 img{
+    float: left;
+    padding: 15px;
+  }
+
+  .alumni2 img{
+    float: left;
+    padding: 15px;
+  }
+
+  .alumni3 img{
+    float: left;
+    padding: 15px;
+  }
+
   .alumni-cards li {
     background-color: white;
     border: none;
