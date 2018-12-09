@@ -45,6 +45,7 @@ li {
 
 /*lauren trying the nav bar again*/
 
+
 * {
   font-family: 'Raleway', sans-serif, 'Times New Roman';
   margin: 0;
@@ -113,7 +114,9 @@ li {
   font-size: 1.75em;
   width: 2em;
 }
-
+@media screen and (min-width:1199px) {
+       #nav { display:block !important; }
+}
 #nav {
   display: none;
 }
