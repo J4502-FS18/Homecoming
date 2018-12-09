@@ -320,33 +320,13 @@ nav #nav li a {
   clear: both;
   display: block;
   margin: auto;
-  width: 30%;
+  width: 50%;
   height: auto;}
 
 .mapcontainer{
-  display: flex;
-  flex-direction: column;
-}
+  background-color: rgb(247, 211, 129);
+  margin: 3em;
 
-  .googlemap {
-    position: relative;
-    padding-bottom: 75%; /* 此為地圖長寬比 */
-
-    height: 0;
-    overflow: hidden;
-    text-align: center;
-  }
-  .googlemap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90% ;
-    height: 100% ;
-    margin-left: 5%;
-  }
-
-.googlemap{
-  text-align:center;
 }
 
 .h2 {
@@ -566,7 +546,6 @@ nav #nav li a {
     background-color:  rgb(247, 211, 129);
   }
 
-
   .alumni-container {
     background-color: white;
     margin: 6px -10px;
@@ -576,7 +555,9 @@ nav #nav li a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
     grid-template-areas: "a a a" "b b b" "c c c"
+
   }
+
   .alumni-cards li {
     background-color: white;
     border: none;
@@ -606,10 +587,10 @@ nav #nav li a {
   }
   .socialmedia .tw:hover {
     box-shadow: 2px 2px 2px 2px #888888;;
-  }
-  .socialmedia .ins:hover {
-    box-shadow: 2px 2px 2px 2px #888888;;
-  }
+    }
+    .socialmedia .ins:hover {
+      box-shadow: 2px 2px 2px 2px #888888;;
+      }
   .cards {
     margin: 6px -10px;
     padding-left: 8px;
@@ -634,16 +615,13 @@ nav #nav li a {
   .socialmedia {
     grid-area: s
   }
-
   #socialbackground {
     background-color: white;
 
   }
-
   .twitter-timeline {
     grid-area: b
   }
-
   .container {
     padding-left: 8px;
     padding-right: 8px;
@@ -663,11 +641,10 @@ nav #nav li a {
   .events {
     display: flex;
     flex-direction: column;
-    margin: 5%;
-    padding:none;
+    padding: 2em;
   }
   .event {
-    margin-block-end: 1em;
+    margin: 1em;
     padding: 1em;
     display: flex;
     flex-direction: row;
