@@ -4,6 +4,7 @@ p {
   font-family: 'Raleway', sans-serif, 'Times New Roman';
 }
 
+
 body {
   background-color: black;
   height: 100%;
@@ -363,7 +364,7 @@ nav #nav li a {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images 
+/* Add a pointer when hovering over the thumbnail images
 .cursor {
   cursor: pointer;
 }
@@ -496,7 +497,7 @@ nav #nav li a {
   nav #nav li {
     border-top: none;
     padding: 1em;
-  
+
   }
   nav #nav li a {
     font-size: 1.5em;
@@ -510,8 +511,8 @@ nav #nav li a {
   nav {
     order: 2;
   }
- 
- 
+
+
   .humans_images{
     text-align: center;
   }
@@ -530,7 +531,7 @@ nav #nav li a {
     text-decoration: underline;
     box-shadow: 5px 5px 5px 2px rgb(209, 155, 28);
   }
- 
+
   .humans_images img {
     padding: 2em;
     width: 100%;
@@ -541,8 +542,8 @@ nav #nav li a {
     bottom: 0;
     background-color:  rgb(247, 211, 129);
   }
-   
- 
+
+
   .alumni-container {
     background-color: white;
     margin: 6px -10px;
@@ -608,7 +609,7 @@ nav #nav li a {
   }
   #socialbackground {
     background-color: white;
-  
+
   }
   .twitter-timeline {
     grid-area: b
@@ -622,22 +623,22 @@ nav #nav li a {
   }
   #center1 {
     grid-area: c;
-   
+
     margin-left: 1em;
   }
   #center2 {
     grid-area: d;
-   
+
     margin-left: 1em;
   }
   #center3 {
     grid-area: e;
-   
+
     margin-left: 1em;
   }
   #center4 {
     grid-area: g;
-   
+
     margin-left: 1em;
   }
   .events {
