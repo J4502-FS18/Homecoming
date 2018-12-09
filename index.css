@@ -114,9 +114,7 @@ li {
   font-size: 1.75em;
   width: 2em;
 }
-@media screen and (min-width:1199px) {
-       #nav { display:block !important; }
-}
+
 #nav {
   display: none;
 }
@@ -637,6 +635,13 @@ nav #nav li a {
   .twitter-timeline {
     grid-area: b
   }
+
+  @media (max-width: 600px) {
+    .twitter-timeline {
+      display: none;
+    }
+  }
+
   .container {
     padding-left: 8px;
     padding-right: 8px;
@@ -734,18 +739,23 @@ div.tipcontainer p {
 
 .containerforalloftips {
   background-color: white;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
 .containert1 {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: white;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
 }
 
 h6 {
@@ -768,6 +778,12 @@ h6 {
 
 .tips_photos img {
   width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .tips_photos {
+    display: none;
+  }
 }
 
 /*end tatum stuff for tips.html*/
