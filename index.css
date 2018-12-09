@@ -546,7 +546,6 @@ nav #nav li a {
     background-color:  rgb(247, 211, 129);
   }
 
-
   .alumni-container {
     background-color: white;
     margin: 6px -10px;
@@ -555,8 +554,10 @@ nav #nav li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
-    grid-template-areas: "a a a" "b b b" "c c c"
+    grid-template-areas: 
+
   }
+
   .alumni-cards li {
     background-color: white;
     border: none;
