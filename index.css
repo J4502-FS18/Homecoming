@@ -706,10 +706,11 @@ nav #nav li a {
   .slideshow {
     padding-left:20px;
     padding-right:20px;
-    padding-top: 8px;
+    padding-top: 1px;
     padding-bottom: 8px;
     grid-area: d;
   }
+
 
   @media (min-width: 600px){
     .slideshow {
