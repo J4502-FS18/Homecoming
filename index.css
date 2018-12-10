@@ -686,8 +686,9 @@ nav #nav li a {
     background-color: white;
 
   }
-  .twitter-timeline {
-    grid-area: b
+
+  .mobileHide {
+    grid-area: b;
   }
 
   .container {
@@ -706,11 +707,12 @@ nav #nav li a {
     grid-area: d;
   }
 
-  @media (max-width: 600px) {
-    .twitter-timeline {
+  @media screen and (max-width: 700px){
+    .mobileHide {
       display: none;
     }
   }
+
 
   .events {
     display: flex;
@@ -769,7 +771,6 @@ nav #nav li a {
     display: none;
   }
 }
-
 /*start tatum stuff for tips.html*/
 
 div.tipcontainer {
