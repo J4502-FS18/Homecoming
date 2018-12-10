@@ -81,34 +81,36 @@
 							</p>
 						</li>
 
-			<div class="slideshow">
-				<script>
-					var i = 0;
-					var images = [];
-					var time = 2000;
-					images [0] = "home1.jpg";
-					images [1] = "home3.jpg";
-					images [2] = "home5.png";
-					images [3] = "home6.png";
-					function changeImg(){
-						document.slide.src = images [i];
-						if(i <images.length - 1){
-							i++;
-						} else {
-							i = 0;
-						}
-						setTimeout ("changeImg()", time);
-					}
-					window.onload = changeImg;
-				</script>
+						<div class="slideshow">
+							<script>
+								var i = 0;
+								var images = [];
+								var time = 2000;
+								images [0] = "home1.jpg";
+								images [1] = "home3.jpg";
+								images [2] = "home5.png";
+								images [3] = "home6.png";
+								function changeImg(){
+									document.slide.src = images [i];
+									if(i <images.length - 1){
+										i++;
+									} else {
+										i = 0;
+									}
+									setTimeout ("changeImg()", time);
+								}
+								window.onload = changeImg;
+							</script>
 
-				<img name="slide" width="700">
-			</div>
+							<img name="slide" width="700">
+						</div>
+
 
 			<div class="mobileHide">
 					<a class="twitter-timeline" data-width="400" data-height="750" href="https://twitter.com/MU_Homecoming?ref_src=twsrc%5Etfw">Tweets by MU_Homecoming</a>
 					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
+
 	</div>
 
 
