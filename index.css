@@ -43,7 +43,7 @@ li {
   list-style: none;
 }
 
-/*lauren trying the nav bar again*/
+/*lauren nav bar */
 
 
 * {
@@ -58,13 +58,16 @@ li {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .header img {
     display: none;
     width: 100%;
     margin-top: 0.5em;
   }
   .event img {
+    display: none;
+  }
+  .googlemap{
     display: none;
   }
 }
@@ -115,12 +118,13 @@ li {
   width: 2em;
 }
 
+
 #nav {
   display: none;
 }
 
 #nav li {
-  display:flex;
+  display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -299,12 +303,22 @@ nav #nav li a {
   right: 0;
 }
 
+.event .location{
+  padding-block-end: 0em;
+  font-weight: bold;
+}
+.event .time{
+  padding-block-end: 0em;
+}
 .event p {
-  padding: 1em 1em 0em 1em;
+  padding: 1em;
 }
 
+
+
 .event h3 {
-  padding: 1em 1em 0em 1em;
+  padding: 1em;
+  background-color: rgb(247, 211, 129);
 }
 
 .img {
@@ -318,13 +332,26 @@ nav #nav li a {
   clear: both;
   display: block;
   margin: auto;
-  width: 50%;
+  width: 100%;
   height: auto;}
 
-.mapcontainer{
-  background-color: rgb(247, 211, 129);
-  margin: 3em;
+  .googlemap {
+    position: relative;
+    padding-bottom: 75%; /* 此為地圖長寬比 */
+    height: 0;
+    overflow: hidden;
+    text-align: center;
 
+  }
+  .googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+  }
+.mapcontainer{
+ width:100%;
 }
 
 .h2 {
@@ -452,6 +479,7 @@ nav #nav li a {
 
 /*Chengzi end*/
 
+
 @media (min-width: 600px) {
   .container {
     display: grid;
@@ -503,9 +531,11 @@ nav #nav li a {
   nav #nav li a {
     font-size: 1.5em;
   }
+
   .menu-trigger {
     display: none;
   }
+
   header h1 {
     order: 1;
   }
@@ -572,7 +602,7 @@ nav #nav li a {
   }
 
   .alumni1 p{
-    padding: 
+    padding:
   }
 
   .alumni2 p{
@@ -660,14 +690,9 @@ nav #nav li a {
     background-color: white;
 
   }
-  .twitter-timeline {
-    grid-area: b
-  }
 
-  @media (max-width: 600px) {
-    .twitter-timeline {
-      display: none;
-    }
+  .mobileHide {
+    grid-area: b;
   }
 
   .container {
@@ -680,37 +705,57 @@ nav #nav li a {
 
   .slideshow {
     padding-left:20px;
-    padding-right:8px;
+    padding-right:20px;
     padding-top: 8px;
     padding-bottom: 8px;
     grid-area: d;
   }
 
+  @media (min-width: 600px){
+    .slideshow {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+
+  @media screen and (max-width: 700px){
+    .mobileHide {
+      display: none;
+    }
+  }
+
+
   .events {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    margin:5%;
+    position: relative;
   }
   .event {
-    margin: 1em;
+    margin-block-end: 1em;
     padding: 1em;
     display: flex;
     flex-direction: row;
     background-color: rgb(247, 211, 129);
   }
   .event img {
-    width: 15%;
-    height: 15%;
+    width: 40%;
+    height: 40%;
     padding-top: 1.5em;
+    margin:auto;
+
   }
   .event h3 {
     margin: 0;
+    font-size: 35px;
+
   }
   .event .p {
-    margin: 0em 2em;
+    margin: 1em 1em;
   }
   .event p {
-    margin: 1em 0em;
+    margin: 1em 1em;
   }
   .timeline {
     display: flex;
@@ -734,8 +779,10 @@ nav #nav li a {
     top: 17px;
     margin: auto;
   }
+  .mapcontainer{
+    display: none;
+  }
 }
-
 /*start tatum stuff for tips.html*/
 
 div.tipcontainer {
