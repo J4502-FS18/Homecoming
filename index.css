@@ -615,19 +615,34 @@ nav #nav li a {
   }
 
   .alumni1 h1{
-    padding: 15px;
+    padding-top: 15px;
     font-size: 25px;
   }
 
   .alumni2 h1{
-    padding: 15px;
+    padding-top: 15px;
     font-size: 25px;
   }
 
   .alumni3 h1{
-    padding: 15px;
+    padding-top: 15px;
     font-size: 25px;
   }
+
+.alumni1 h2{
+  font-size: 14px;
+  padding: 0px;
+}
+
+.alumni2 h2{
+  font-size: 14px;
+  padding: 0px;
+}
+
+.alumni3 h2{
+  font-size: 14px;
+  padding: 0px;
+}
 
   .alumni-cards li {
     background-color: white;
