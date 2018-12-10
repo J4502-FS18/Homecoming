@@ -701,11 +701,19 @@ nav #nav li a {
 
   .slideshow {
     padding-left:20px;
-    padding-right:8px;
+    padding-right:20px;
     padding-top: 8px;
     padding-bottom: 8px;
     grid-area: d;
   }
+
+  @media (min-width: 600px){
+    .slideshow {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
 
   @media screen and (max-width: 700px){
     .mobileHide {
