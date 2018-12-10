@@ -58,7 +58,7 @@ li {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .header img {
     display: none;
     width: 100%;
@@ -326,15 +326,15 @@ nav #nav li a {
     padding-bottom: 75%; /* 此為地圖長寬比 */
     height: 0;
     overflow: hidden;
+    text-align: center;
 
   }
   .googlemap iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5%;
     width: 90%;
     height: 100%;
-
   }
 .mapcontainer{
   background-color: rgb(247, 211, 129);
@@ -705,28 +705,33 @@ nav #nav li a {
   .events {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    margin:5%;
+    position: relative;
   }
   .event {
-    margin: 1em;
+    margin-block-end: 1em;
     padding: 1em;
     display: flex;
     flex-direction: row;
     background-color: rgb(247, 211, 129);
   }
   .event img {
-    width: 15%;
-    height: 15%;
+    width: 40%;
+    height: 40%;
     padding-top: 1.5em;
+    margin:auto;
+
   }
   .event h3 {
     margin: 0;
+    font-size: 35px;
+
   }
   .event .p {
-    margin: 0em 2em;
+    margin: 1em 1em;
   }
   .event p {
-    margin: 1em 0em;
+    margin: 1em 1em;
   }
   .timeline {
     display: flex;
