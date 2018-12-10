@@ -181,7 +181,7 @@ nav #nav li a {
   color: black;
 }
 .humans_images{
-  background-color:  rgb(247, 211, 129);
+  background-color:  white;
 }
 .humans_images img {
   padding: 1em 1em 1em 1em;
@@ -557,7 +557,7 @@ nav #nav li a {
     right: 0;
     top:0;
     bottom: 0;
-    background-color:  rgb(247, 211, 129);
+    background-color:  white;
   }
 
   .alumni-container {
@@ -585,6 +585,34 @@ nav #nav li a {
   .alumni3 img{
     float: left;
     padding: 15px;
+  }
+
+  .alumni1 p{
+    padding: 
+  }
+
+  .alumni2 p{
+    padding:
+  }
+
+  .alumni3 p{
+    padding:
+
+  }
+
+  .alumni1 h1{
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .alumni2 h1{
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .alumni3 h1{
+    padding: 15px;
+    font-size: 25px;
   }
 
   .alumni-cards li {
@@ -755,18 +783,23 @@ div.tipcontainer p {
 
 .containerforalloftips {
   background-color: white;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
 .containert1 {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: white;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 550px;
+  width: 80%;
 }
 
 h6 {
@@ -789,6 +822,12 @@ h6 {
 
 .tips_photos img {
   width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .tips_photos {
+    display: none;
+  }
 }
 
 /*end tatum stuff for tips.html*/
