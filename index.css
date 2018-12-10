@@ -67,6 +67,9 @@ li {
   .event img {
     display: none;
   }
+  .googlemap{
+    display: none;
+  }
 }
 
 /*header and nav bar*/
@@ -299,12 +302,22 @@ nav #nav li a {
   right: 0;
 }
 
+.event .location{
+  padding-block-end: 0em;
+  font-weight: bold;
+}
+.event .time{
+  padding-block-end: 0em;
+}
 .event p {
-  padding: 1em 1em 0em 1em;
+  padding: 1em;
 }
 
+
+
 .event h3 {
-  padding: 1em 1em 0em 1em;
+  padding: 1em;
+  background-color: rgb(247, 211, 129);
 }
 
 .img {
@@ -318,7 +331,7 @@ nav #nav li a {
   clear: both;
   display: block;
   margin: auto;
-  width: 50%;
+  width: 100%;
   height: auto;}
 
   .googlemap {
@@ -337,10 +350,7 @@ nav #nav li a {
     height: 100%;
   }
 .mapcontainer{
-  background-color: rgb(247, 211, 129);
-  margin: 5%;
-  text-align: center;
-
+ width:100%;
 }
 
 .h2 {
@@ -754,6 +764,9 @@ nav #nav li a {
     border: 3px solid grey;
     top: 17px;
     margin: auto;
+  }
+  .mapcontainer{
+    display: none;
   }
 }
 
