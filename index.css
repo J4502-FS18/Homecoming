@@ -321,9 +321,25 @@ nav #nav li a {
   width: 50%;
   height: auto;}
 
+  .googlemap {
+    position: relative;
+    padding-bottom: 75%; /* 此為地圖長寬比 */
+    height: 0;
+    overflow: hidden;
+
+  }
+  .googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+
+  }
 .mapcontainer{
   background-color: rgb(247, 211, 129);
-  margin: 3em;
+  margin: 5%;
+  text-align: center;
 
 }
 
