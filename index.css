@@ -181,7 +181,7 @@ nav #nav li a {
   color: black;
 }
 .humans_images{
-  background-color:  rgb(247, 211, 129);
+  background-color:  white;
 }
 .humans_images img {
   padding: 1em 1em 1em 1em;
@@ -541,7 +541,7 @@ nav #nav li a {
     right: 0;
     top:0;
     bottom: 0;
-    background-color:  rgb(247, 211, 129);
+    background-color:  white;
   }
 
   .alumni-container {
