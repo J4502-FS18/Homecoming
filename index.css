@@ -49,6 +49,8 @@ li {
 * {
   font-family: 'Raleway', sans-serif, 'Times New Roman';
   margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 /*image size*/
@@ -719,19 +721,24 @@ nav #nav li a {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     grid-area: a
   }
 
-  .slideshow {
-    max-width: 400px;
-    height: auto;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top: 1px;
-    padding-bottom: 8px;
-    grid-area: c;
-  }
+.slideshow {
+  max-width: 400px;
+  height: auto;
+  padding-left:50px;
+  padding-right:20px;
+  padding-top: 1px;
+  padding-bottom: 8px;
+  grid-area: c;
+}
+
+img {
+  width: 600px
+}
+
 
   @media screen and (max-width: 700px){
     .mobileHide {
