@@ -659,6 +659,8 @@ nav #nav li a {
   .alumni3 {
     grid-area: c
   }
+
+
   .socialmedia .fb{
     margin: 1em;
   }
@@ -669,14 +671,15 @@ nav #nav li a {
     margin: 1em;
   }
   .socialmedia .fb:hover {
-  box-shadow: 2px 2px 2px 2px #888888;;
+    box-shadow: 2px 2px 2px 2px #888888;;
   }
   .socialmedia .tw:hover {
     box-shadow: 2px 2px 2px 2px #888888;;
-    }
-    .socialmedia .ins:hover {
-      box-shadow: 2px 2px 2px 2px #888888;;
-      }
+  }
+  .socialmedia .ins:hover {
+    box-shadow: 2px 2px 2px 2px #888888;;
+  }
+
   .cards {
     margin: 6px -10px;
     padding-left: 8px;
@@ -688,22 +691,24 @@ nav #nav li a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
-    "a a . s ."
-    "a a . b ."
+    "a a a s ."
+    "a a a b ."
     "c d . b ."
     "c d . b ."
   }
+
   .cards li {
     border: none;
     padding: 20px;
     border-radius: 1px;
   }
+
   .socialmedia {
     grid-area: s
   }
+
   #socialbackground {
     background-color: white;
-
   }
 
   .mobileHide {
@@ -719,21 +724,14 @@ nav #nav li a {
   }
 
   .slideshow {
+    max-width: 400px;
+    height: auto;
     padding-left:20px;
     padding-right:20px;
     padding-top: 1px;
     padding-bottom: 8px;
-    grid-area: d;
+    grid-area: c;
   }
-
-
-  @media (min-width: 600px){
-    .slideshow {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-
 
   @media screen and (max-width: 700px){
     .mobileHide {
